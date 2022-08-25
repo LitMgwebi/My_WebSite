@@ -1,0 +1,123 @@
+/* App config*/
+.App {
+  align-items: center;
+  justify-content: center;
+}
+
+/*Header config*/
+#Header p{
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+
+/*Intro Config*/
+#Intro {
+  width: 100%;
+  display: flex;
+  height: 300px;
+  margin: 0 auto 2rem;
+  padding: 15px;
+  align-items: center;
+  background-color:darkgray;
+}
+#Intro img {
+  float: left;
+  margin-left: 2em;
+  object-fit:contain;
+  border-radius:250px;
+}
+
+#Intro p {
+  flex-grow: 1;
+  margin: 5%;
+  text-align: center;
+}
+
+#FindMe {
+  float: right;
+  margin-right: 2em;
+}
+
+#FindMe ul{
+  list-style: none;
+  /* align-items: center; */
+}
+
+/*#links li {
+  height: 25px;
+  width: 25px;
+}*/
+.logo {
+  width: 19px;
+  height: 19px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+/*About Me Paragraph display*/
+#AboutMe {
+  display: block;
+  margin-bottom: 150px;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+#AboutMe p {
+  object-fit: contain;
+  text-align: center;
+}
+
+/* Tab Config*/
+.outlet{
+  text-align: center;
+}
+
+ul.nav {
+  width: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  @media (max-width: 768px) {
+    width: 10%;
+  }
+}
+
+ul.nav li {
+  width: 60%;
+  list-style: none;
+  border: 2px solid #39A2DB;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-bottom-left-radius: 4rem;
+  border-top-left-radius: 4rem;
+}
+ul.nav li:nth-child(2) {
+  border-radius: 0;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+ul.nav li:hover {
+  background: rgba(50, 224, 196, 0.15);
+}
+ul.nav li.active {
+  background: #39A2DB;
+}
+
+/* Footer*/
+#Footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 40px;
+  background: grey;
+}
