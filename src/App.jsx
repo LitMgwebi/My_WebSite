@@ -7,7 +7,7 @@ import Tabs from "./components/PageContent/Tabs";
 function App() {
   return (
     <div className="App">
-      <div><Header/></div>
+      <Header/>
 
       <div>
           <Intro/>
@@ -15,7 +15,8 @@ function App() {
           <Tabs/>
       </div>
 
-      <div><Footer/></div>
+      <div className="spacer"></div>
+      <Footer/>
     </div>
   );
 }

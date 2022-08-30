@@ -14,7 +14,7 @@
 
 /*Intro Config*/
 #Intro {
-  width: 100%;
+  width: auto;
   display: flex;
   height: 300px;
   margin: 0 auto 2rem;
@@ -37,34 +37,28 @@
 
 #FindMe {
   float: right;
+  display: flex;
+  flex-direction:column;
   margin-right: 2em;
+  width: 50px;
+  align-items: center;
 }
 
-#FindMe ul{
-  list-style: none;
-  /* align-items: center; */
-}
-
-/*#links li {
-  height: 25px;
-  width: 25px;
-}*/
 .logo {
-  width: 19px;
-  height: 19px;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  width: 22px;
+  height: 22px;
+  padding: 5% 0% 5%;
 }
 
 
 /*About Me Paragraph display*/
 #AboutMe {
   display: block;
-  margin-bottom: 150px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin: 0px 11.5% 11%;
   text-align: center;
   background-color: lightgray;
+  border-radius: 2em;
+  padding: 0.4em 1.4em;
 }
 
 #AboutMe p {
@@ -118,6 +112,23 @@ ul.nav li.active {
   bottom: 0;
   width: 100%;
   /* Height of the footer*/
-  height: 40px;
+  height: 30px;
   background: grey;
+}
+
+/*Pdf viewer*/
+#myDocs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 11.5% 3em;
+  background-color: #f1f1f1; 
+  border-radius: 2em;
+  padding: 0.5em;
+}
+
+
+.buttonGroup{
+  display: inline-block;
 }
