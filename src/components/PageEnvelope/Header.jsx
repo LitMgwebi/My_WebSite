@@ -1,7 +1,7 @@
 function Header() {
     return (
         <header id="Header">
-            <p >Hi, I'm Lithi Mgwebi</p>
+            <p>Lithi Mgwebi</p>
         </header>
     )
 }

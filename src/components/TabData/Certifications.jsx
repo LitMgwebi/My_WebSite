@@ -23,23 +23,22 @@ function Certifications() {
     }
 
     return (
-       <div id="myDocs">
-            <Document classname="doc" file="/media/master.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-                <Page height="450" pageNumber={pageNumber} />
-            </Document>
-            {/* <p> Page {pageNumber} of {numPages}</p> */}
-            <div className="button-group">
-                <p> Page {pageNumber} of {numPages}</p>
+      <div id="myDocs">
+        <Document classname="doc" file="/media/master.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+            <Page height="420" pageNumber={pageNumber} />
+        </Document>
+        <div className="button-group">
+          <p> Page {pageNumber} of {numPages}</p>
 
-                { pageNumber > 1 && 
-                    <button onClick={changePageBack}>Back</button>
-                }
-                {
-                pageNumber < numPages &&
-                    <button onClick={changePageNext}>Next</button>
-                }
-            </div>
-       </div>
+          { pageNumber > 1 && 
+              <button onClick={changePageBack}>{"<<"}</button>
+          }
+          {
+          pageNumber < numPages &&
+              <button onClick={changePageNext}>{">>"}</button>
+          }
+        </div>
+      </div>
     );
 }
 

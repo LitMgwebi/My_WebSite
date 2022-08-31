@@ -9,7 +9,7 @@ const Intro = () => {
                 width="175"
                 height="300"/>
         
-            <p>Hi this is the intro paragraph. This is where I'll be speaking a bit about myself.</p>
+            <p>Hi, my name is Lithi Mgwebi. I am a freelance web developer</p>
 
             <FindMe/>
         </div>

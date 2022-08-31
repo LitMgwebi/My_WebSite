@@ -112,7 +112,7 @@ ul.nav li.active {
   bottom: 0;
   width: 100%;
   /* Height of the footer*/
-  height: 30px;
+  height: 50px;
   background: grey;
 }
 
@@ -125,10 +125,20 @@ ul.nav li.active {
   margin: 20px 11.5% 3em;
   background-color: #f1f1f1; 
   border-radius: 2em;
-  padding: 0.5em;
+  padding: 1.5em;
 }
 
+button{
+  margin: 5px;
+  border: 1px solid #39A2DB;
+}
 
-.buttonGroup{
-  display: inline-block;
+button:hover{
+  border-radius: 40%;
+  border: 3px solid #39A2DB;
+  transition: 0.1s;
+}
+
+button:active{
+  color:darkmagenta;
 }

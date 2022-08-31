@@ -5,6 +5,7 @@ import Twitter from "../../icons/Twitter.svg";
 import Instagram from "../../icons/Instagram.svg";
 import Link from "../../icons/Link.svg";
 import TikTok from "../../icons/TikTok.svg";
+import DEV from "../../icons/DEV.svg"
 import {useState} from "react";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import ExpandLess from "@material-ui/icons/ExpandLess";
@@ -40,6 +41,9 @@ const FindMe = () => {
                 </a>
                 <a href="https://www.tiktok.com/@lithimgw?lang=en" target="_blank" rel="noopener noreferrer">
                     <img className="logo" src={TikTok} alt="TikTokLogo"/> 
+                </a>
+                <a href="https://dev.to/lit_mgwebi" target="_blank" rel="noopener noreferrer">
+                    <img className="logo" src={DEV} alt="DEVLogo" />
                 </a>
             </Collapse>
         </div>
