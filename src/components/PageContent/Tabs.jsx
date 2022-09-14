@@ -1,29 +1,30 @@
 import AboutMe from "../TabData/AboutMe";
-import Certifications from "../TabData/Certifications";
+import PastProjects from "../TabData/PastProjects";
 import {useState} from "react";
 
 function Tabs() {
-    const [active, setActive] = useState("AboutMe");
+    const [active, setActive] = useState("PastProjects");
 
     return (
         <div id="Tabs">
 
             <ul className="nav">
                 <li 
+                    className={active === "PastProjects" ? "active" : ""}
+                    onClick={() => setActive("PastProjects")}
+                >
+                    Past Projects
+                </li>
+                <li 
                     className={active === "AboutMe" ? "active" : ""} 
                     onClick={() => setActive("AboutMe")}
                 >
-                    About Me...
+                    About Me
                 </li>
-                <li 
-                    className={active === "Certifications" ? "active" : ""}
-                    onClick={() => setActive("Certifications")}
-                >
-                    Certifications
-                </li>
+                
             </ul>
             <div className="outlet">
-                {active === "AboutMe" ? <AboutMe/> : <Certifications/>}
+                {active === "PastProjects" ? <PastProjects/> : <AboutMe/>}
             </div>
         </div>
     );

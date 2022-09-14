@@ -25,7 +25,7 @@ function Certifications() {
     return (
       <div id="myDocs">
         <Document classname="doc" file="/media/master.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-            <Page height="420" pageNumber={pageNumber} />
+            <Page height="320" pageNumber={pageNumber} />
         </Document>
         <div className="button-group">
           <p> Page {pageNumber} of {numPages}</p>
