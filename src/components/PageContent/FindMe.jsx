@@ -4,7 +4,7 @@ import Reddit from "../../icons/Reddit.svg";
 import Twitter from "../../icons/Twitter.svg";
 import Instagram from "../../icons/Instagram.svg";
 import Link from "../../icons/Link.svg";
-import TikTok from "../../icons/TikTok.svg";
+import TikTok from "../../icons/Tiktok.svg";
 import DEV from "../../icons/DEV.svg"
 import {useState} from "react";
 import ExpandMore from "@material-ui/icons/ExpandMore";

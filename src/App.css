@@ -33,28 +33,39 @@
 #Intro {
   width: 85%;
   border-radius: 2rem;
-  display:flex;
   height: 325px;
   margin: 2.5% 5%;
   padding: 1.5%;
-  align-items: center;
+  /* align-items: center; */
   background-color:aquamarine;
   justify-content:center;
+  display:grid;
+  grid-template-rows: 70% 30%;
+  align-content: center;
 }
 
-.IntroParagraph{
+/* .IntroParagraph{
   align-self: center;
-}
+} */
 
+.IntroImage{
+  width: 350px;
+  height: 400px;
+}
 .IntroImage img{
-  object-fit:contain;
+  display: block;
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 50%;
+  /* object-fit:fill; */
   border-radius:100%;
 }
 
 .logo {
-  width: 22px;
-  height: 22px;
-  padding: 5% 0% 5%;
+  border-radius: 2rem;
+  width: 23px;
+  height: 23px;
+  padding: 5% 5% 5%;
 }
 
 
@@ -92,6 +103,12 @@
 .card{
   width: 250px;
   margin: 50px;
+}
+
+.homeLogo {
+  width: 35px;
+  height: 35px;
+  padding: 5% 0% 5%;
 }
 
 

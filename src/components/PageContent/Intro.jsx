@@ -5,8 +5,6 @@ const Intro = () => {
                 <img  
                     src={require("../../media/IMG-20210503-WA0027.jpg")} 
                     alt="Lithi" 
-                    width="175"
-                    height="300"
                 />
             </div>
             <div className="IntroParagraph">

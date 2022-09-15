@@ -1,10 +1,11 @@
 import {Link} from "react-router-dom";
+import Home from "../../../icons/Home.svg";
 
 function HomeButton(){
     return(
         <div id="HomeButton">
             <Link to="/">
-                    <button className="PPButton">Home</button>
+                <img className="homeLogo" src={Home} alt="Home" />
             </Link>
         </div>
     );
