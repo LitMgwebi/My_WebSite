@@ -25,7 +25,7 @@ const FindMe = () => {
             {open ? <ExpandMore/> : <ExpandLess/>}
             <Collapse  in={open} timeout="auto" unmountOnExit>
                 <div id="FindMe">
-                    <a href="https://twitter.com/CopyLithi" target="_blank" rel="noopener noreferrer"> 
+                    <a href="https://twitter.com/CopyNinjaLithi" target="_blank" rel="noopener noreferrer"> 
                         <img className="logo" src={Twitter} alt="TwitterLogo"/>
                     </a>
                     <a href="https://github.com/LitMgwebi" target="_blank" rel="noopener noreferrer"> 
