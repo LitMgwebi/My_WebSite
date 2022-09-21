@@ -1,16 +1,17 @@
 import Header from "./components/PageEnvelope/Header";
+import Footer from "./components/PageEnvelope/Footer";
 import Intro from "./components/PageContent/Intro";
-import PythonSwitcher from "./components/PastProjects/PythonPage/PythonSwitcher";
-import ReactSwitcher from "./components/PastProjects/ReactPage/ReactSwitcher";
-import MernSwitcher from "./components/PastProjects/MernPage/MernSwitcher";
+import MernSwitcher from "./components/PageContent/Chronicle/PortfolioPages/MernPage/MernSwitcher";
+import ReactSwitcher from "./components/PageContent/Chronicle/PortfolioPages/ReactPage/ReactSwitcher";
+import PythonSwitcher from "./components/PageContent/Chronicle/PortfolioPages/PythonPage/PythonSwitcher";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
 import './App.css';
-import Footer from "./components/PageEnvelope/Footer";
-import Tabs from "./components/PageContent/Tabs";
+import ChronicleTabs from "./components/PageContent/ChronicleTabs";
+import AbilitiesTabs from "./components/PageContent/AbilitiesTabs";
 
 function App() {
   return (
@@ -19,16 +20,19 @@ function App() {
 
       <div>
           <Intro/>
+
           <Router>
             <div>
               <Routes>
-                <Route path="/" element={<Tabs/>}/>
+                <Route path="/" element={<ChronicleTabs/>}/>
                 <Route path="/reactprojects" element={<ReactSwitcher/>}/>
                 <Route path="/pythonprojects" element={<PythonSwitcher/>}/>
                 <Route path="/mernprojects" element={<MernSwitcher/>}/>
               </Routes>
             </div>
           </Router>
+
+          <AbilitiesTabs/>
       </div>
 
       <div className="spacer"></div>

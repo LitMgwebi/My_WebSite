@@ -1,27 +1,28 @@
 import { useState } from "react";
-import MyWebsite from "./MyWebsite";
 import Index from "./Index";
-import HomeButton from "../components/HomeButton";
+import HomeButton from "../units/HomeButton";
+import ArtBlog from "./ArtBlog";
 
-function ReactSwitcher() {
+function MernSwitcher() {
     const [navi, setNavi] = useState("index");
-    
+
     const changeChoice = (navi) => {
-        setNavi(navi)
+        setNavi(navi);
     }
+
     return(
         <div>
             <div className="ProjectHeader">
-                <h2>React Projects</h2>
+                <h2>M.E.R.N Projects</h2>
             </div>
             <div className="Switcher">
                 <HomeButton/>
                 <div className="Navi">
-                    {navi === "myWebsite" ? <MyWebsite navi={changeChoice}/>:   <Index navi={changeChoice}/>}
+                    {navi === "artBlog" ? <ArtBlog navi={changeChoice}/>:   <Index navi={changeChoice}/>}
                 </div>
-            </div>
+            </div>    
         </div>
     );
 }
 
-export default ReactSwitcher;
+export default MernSwitcher;

@@ -13,7 +13,7 @@ import Collapse from "@material-ui/core/Collapse";
 
 
 const FindMe = () => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
 
     const handleClick = () => {
@@ -23,7 +23,7 @@ const FindMe = () => {
         <div id="FindMe">
             <img className="logo" onClick={handleClick} src={Link} alt="Link"/>
             {open ? <ExpandLess/> : <ExpandMore/>}
-            <Collapse  in={open} timeout={200} enter={true} exit={true} unmountOnExit={true} mountOnEnter={true}>
+            <Collapse  in={open} timeout="auto" unmountOnExit>
                 <div id="FindMe">
                     <a href="https://twitter.com/CopyNinjaLithi" target="_blank" rel="noopener noreferrer"> 
                         <img className="logo" src={Twitter} alt="TwitterLogo"/>

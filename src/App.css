@@ -86,8 +86,8 @@
 }
 
 
-/* Past Projects*/
-#PastProjects {
+/* Portfolio*/
+#Portfolio {
   overflow-y: scroll;
   height: 400px;
   display: flex;

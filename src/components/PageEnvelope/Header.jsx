@@ -1,4 +1,4 @@
-import FindMe from "../PageContent/FindMe";
+import FindMe from "./FindMe";
 
 function Header() {
     return (

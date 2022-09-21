@@ -1,5 +1,5 @@
 import{useState} from "react";
-import HomeButton from "../components/HomeButton";
+import HomeButton from "../units/HomeButton";
 import Index from "./Index";
 import SimpleCalculator from "./SimpleCalculator";
 

@@ -1,19 +1,19 @@
-import AboutMe from "../TabData/AboutMe";
-import PastProjects from "../TabData/PastProjects";
+import AboutMe from "./Chronicle/AboutMe";
+import Portfolio from "./Chronicle/Portfolio";
 import {useState} from "react";
 
-function Tabs() {
-    const [active, setActive] = useState("PastProjects");
+function ChronicleTabs() {
+    const [active, setActive] = useState("Portfolio");
 
     return (
         <div id="Tabs">
 
             <ul className="nav">
                 <li 
-                    className={active === "PastProjects" ? "active" : ""}
-                    onClick={() => setActive("PastProjects")}
+                    className={active === "Portfolio" ? "active" : ""}
+                    onClick={() => setActive("Portfolio")}
                 >
-                    Past Projects
+                    Portfolio
                 </li>
                 <li 
                     className={active === "AboutMe" ? "active" : ""} 
@@ -24,10 +24,10 @@ function Tabs() {
                 
             </ul>
             <div className="outlet">
-                {active === "PastProjects" ? <PastProjects/> : <AboutMe/>}
+                {active === "Portfolio" ? <Portfolio/> : <AboutMe/>}
             </div>
         </div>
     );
 }
 
-export default Tabs;
+export default ChronicleTabs;

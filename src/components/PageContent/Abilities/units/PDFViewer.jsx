@@ -1,7 +1,7 @@
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import {useState} from "react";
 
-function Certifications() {
+function PDFViewer() {
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
   
@@ -42,4 +42,4 @@ function Certifications() {
     );
 }
 
-export default Certifications;
+export default PDFViewer;
