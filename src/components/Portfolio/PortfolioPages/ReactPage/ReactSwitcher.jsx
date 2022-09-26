@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MyWebsite from "./MyWebsite";
 import Index from "./Index";
-import HomeButton from "../units/HomeButton";
+import {Home} from "../../../Misc/Links";
 
 function ReactSwitcher() {
     const [navi, setNavi] = useState("index");
@@ -15,7 +15,7 @@ function ReactSwitcher() {
                 <h2>React Projects</h2>
             </div>
             <div className="Switcher">
-                <HomeButton/>
+                <Home/>
                 <div className="Navi">
                     {navi === "myWebsite" ? <MyWebsite navi={changeChoice}/>:   <Index navi={changeChoice}/>}
                 </div>

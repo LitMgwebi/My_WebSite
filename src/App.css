@@ -16,31 +16,43 @@
   color: black;
 }
 
-#FindMe {
-  margin: 1% 5% 1%;
-  float: right;
+.socialLinks {
+  /* margin: 1% 5% 1%; */
+  /* float: right; */
   display: flex;
-  flex-direction: row-reverse;
-  width: 25px;
+  flex-direction: row;
+  /* width: 25px; */
 }
 
-#FindMe a{
+.socialLink{
+  padding: 0% 0.2%;
+  width: auto;
+  max-width: 25px;
+  /* margin: 1% 5% 1%; */
+}
+
+.siteLinks {
+  margin: 1% 5% 1%;
+  /* float: right; */
+  display: flex;
+  flex-direction: row;
+  /* width: 25px; */
+}
+.siteLink {
   padding: 0% 2.5%;
+  width: 80px;
 }
-
 
 /*Intro Config*/
 #Intro {
-  width: 85%;
   border-radius: 2rem;
   height: 325px;
-  margin: 2.5% 5%;
+  margin: 2.5% 4%;
   padding: 1.5%;
-  /* align-items: center; */
   background-color:aquamarine;
   justify-content:center;
-  display:grid;
-  grid-template-rows: 70% 30%;
+  display:flex;
+  /* grid-template-rows: 70% 30%; */
   align-content: center;
 }
 
@@ -53,7 +65,7 @@
   height: 400px;
 }
 .IntroImage img{
-  display: block;
+  /* display: block; */
   margin-left: 50%;
   margin-right: 50%;
   width: 50%;
@@ -70,7 +82,7 @@
 
 
 /*About Me Paragraph display*/
-#AboutMe {
+/* #AboutMe {
   display: block;
   margin: 2.5% 15.5% 8%;
   height: 400px;
@@ -78,31 +90,35 @@
   background-color: aquamarine;
   border-radius: 2em;
   padding: 0.4em 1.4em;
-}
+} */
 
-#AboutMe p {
+/* #AboutMe p {
   object-fit: contain;
   text-align: center;
-}
+} */
 
 
 /* Portfolio*/
-#Portfolio {
-  overflow-y: scroll;
-  height: 400px;
+#ContentContainer {
+  overflow: auto;
+  height: auto;
+  max-height: 500px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 2.5% 15.5% 8%;
+  margin: 2.5% 10% 8%;
   text-align: center;
   background-color: aquamarine;
   border-radius: 2em;
-  padding: 0.4em 1.4em;
+  padding: 1.4% 1%;
 }
 
 .card{
-  width: 250px;
-  margin: 50px;
+  width: auto;
+  height: auto;
+  max-width: 240px;
+  max-height: 60%;
+  margin: 4%;
 }
 
 .homeLogo {
@@ -112,7 +128,7 @@
 }
 
 
-/* Tab Config*/
+/* Tab Config
 .outlet{
   text-align: center;
 }
@@ -149,7 +165,7 @@ ul.nav li:hover {
 }
 ul.nav li.active {
   background: #39A2DB;
-}
+} */
 
 
 /*Pdf viewer*/
@@ -180,7 +196,7 @@ ul.nav li.active {
   text-align: center;
 }
 
-.Navi {
+/* .Navi {
   display: flex;
   overflow-y: scroll;
   flex-wrap: wrap;
@@ -190,8 +206,21 @@ ul.nav li.active {
   display: grid;
   align-content: center;
   margin: 50% 15%;
-}
+} */
 
+
+/*Skills*/
+/* .RadarChart{
+  display: flex;
+  justify-content:baseline;
+  width: 20%;
+  height: 20%;
+  margin: 1.2%;
+} */
+
+.Certificate{
+  padding: 0% 1%
+}
 
 /* Footer*/
 #Footer {

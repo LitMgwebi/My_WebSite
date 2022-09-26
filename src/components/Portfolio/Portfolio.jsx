@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 const Portfolio = () => {
     const height = "150"
     return (
-        <div id="Portfolio">
+        <div id="ContentContainer">
             <Card className='card'>
                 <Link to="/pythonprojects">
                     <CardActionArea>
@@ -16,7 +16,7 @@ const Portfolio = () => {
                             component="img"
                             height={height}
                             alt="Python"
-                            image={require("../../../media/python.jpg")} 
+                            image={require("../../media/python.jpg")} 
                         />
                         <CardContent>  
                             <h2 className="cardHeader">Python</h2>
@@ -34,7 +34,7 @@ const Portfolio = () => {
                             component="img"
                             height={height}
                             alt="M.E.R.N"
-                            image={require("../../../media/mern.png")}
+                            image={require("../../media/mern.png")}
                         />
                         <CardContent>
                             <h2 className="cardHeader">M.E.R.N </h2>
@@ -52,7 +52,7 @@ const Portfolio = () => {
                             component="img"
                             height={height}
                             alt="React"
-                            image={require("../../../media/react.png")} 
+                            image={require("../../media/react.png")} 
                         />
                         <CardContent>
                             <h2 className="cardHeader">React</h2>

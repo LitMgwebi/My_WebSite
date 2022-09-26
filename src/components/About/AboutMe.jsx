@@ -1,6 +1,6 @@
 function AboutMe() {
     return(
-        <article id="AboutMe">
+        <article id="ContentContainer">
             <p>I am a softwate</p>
         </article>
     );

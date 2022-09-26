@@ -1,5 +1,5 @@
 import{useState} from "react";
-import HomeButton from "../units/HomeButton";
+import{Home} from "../../../Misc/Links";
 import Index from "./Index";
 import SimpleCalculator from "./SimpleCalculator";
 
@@ -15,8 +15,8 @@ function PythonSwitcher(){
             <div className="ProjectHeader">
                 <h2>Python Projects</h2>
             </div>
-             <div className="Switcher">
-                <HomeButton/>
+             <div className="ContentContainer">
+                <Home/>
                 <div className="Navi">
                     {navi === "simpleCalculator" ? <SimpleCalculator navi={changeChoice} /> : <Index navi={changeChoice}/>} 
                 </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Index from "./Index";
-import HomeButton from "../units/HomeButton";
+import{Home} from "../../../Misc/Links";
 import ArtBlog from "./ArtBlog";
 
 function MernSwitcher() {
@@ -16,7 +16,7 @@ function MernSwitcher() {
                 <h2>M.E.R.N Projects</h2>
             </div>
             <div className="Switcher">
-                <HomeButton/>
+                <Home/>
                 <div className="Navi">
                     {navi === "artBlog" ? <ArtBlog navi={changeChoice}/>:   <Index navi={changeChoice}/>}
                 </div>
