@@ -1,13 +1,8 @@
-/* App config*/
-.App {
-  align-items: center;
-  justify-content: center;
-}
-
 /*Header config*/
 #Header{
   width: 100%;
   height: 25px;
+  /* margin-bottom: 5px; */
 }
 
 #Header p{
@@ -16,27 +11,39 @@
   color: black;
 }
 
+.siteLogo {
+  border-radius: 2rem;
+  width: 80px;
+  height: 80px;
+  padding: 5% 5% 5%;
+}
+
+.headerLinks {
+  display: flex;
+  float: right;
+  flex-direction: row;
+  width: 10%;
+  padding-right: 10%;
+  margin: 0.5% 0.9% 0.9% 0%
+}
+
 .socialLinks {
-  /* margin: 1% 5% 1%; */
-  /* float: right; */
+  margin: 5px 43% 5px;
   display: flex;
   flex-direction: row;
-  /* width: 25px; */
+
 }
 
 .socialLink{
   padding: 0% 0.2%;
   width: auto;
   max-width: 25px;
-  /* margin: 1% 5% 1%; */
 }
 
 .siteLinks {
   margin: 1% 5% 1%;
-  /* float: right; */
   display: flex;
   flex-direction: row;
-  /* width: 25px; */
 }
 .siteLink {
   padding: 0% 2.5%;
@@ -49,16 +56,12 @@
   height: 325px;
   margin: 2.5% 4%;
   padding: 1.5%;
+  width: 88%;
   background-color:aquamarine;
   justify-content:center;
   display:flex;
-  /* grid-template-rows: 70% 30%; */
   align-content: center;
 }
-
-/* .IntroParagraph{
-  align-self: center;
-} */
 
 .IntroImage{
   width: 350px;
@@ -80,45 +83,46 @@
   padding: 5% 5% 5%;
 }
 
-
-/*About Me Paragraph display*/
-/* #AboutMe {
-  display: block;
-  margin: 2.5% 15.5% 8%;
-  height: 400px;
-  text-align: center;
-  background-color: aquamarine;
-  border-radius: 2em;
-  padding: 0.4em 1.4em;
-} */
-
-/* #AboutMe p {
-  object-fit: contain;
-  text-align: center;
-} */
-
-
 /* Portfolio*/
 #ContentContainer {
   overflow: auto;
   height: auto;
-  max-height: 500px;
+  max-height: 400px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 2.5% 10% 8%;
+  margin: 2.05% 10% 2%;
   text-align: center;
   background-color: aquamarine;
   border-radius: 2em;
-  padding: 1.4% 1%;
+  padding: 0.4em 1.4em;
+}
+
+.Switcher{
+  height: 400px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin: 2.05% 10% 2%;
+  padding: 0.4em 1.4em;
+  background-color: aquamarine;
+  border-radius: 2em;
+}
+
+.switcherCard{
+  width: auto;
+  height: auto;
+  max-width: 250px;
+  max-height: 80%;
+  margin: 3%;
+
 }
 
 .card{
   width: auto;
   height: auto;
   max-width: 240px;
-  max-height: 60%;
-  margin: 4%;
+  max-height: 40%;
+  margin: 3.5%;
 }
 
 .homeLogo {
@@ -127,109 +131,49 @@
   padding: 5% 0% 5%;
 }
 
-
-/* Tab Config
-.outlet{
-  text-align: center;
-}
-
-ul.nav {
-  width: 50%;
-  margin: 0 auto 1rem;
+.switcherNavi{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 2rem;
-  @media (max-width: 768px) {
-    width: 10%;
-  }
+  overflow-y: auto;
+  flex-wrap: wrap;
 }
 
-ul.nav li {
-  width: 60%;
-  list-style: none;
-  border: 2px solid #39A2DB;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  border-bottom-left-radius: 4rem;
-  border-top-left-radius: 4rem;
-}
-ul.nav li:nth-child(2) {
-  border-radius: 0;
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
-}
-ul.nav li:hover {
-  background: rgba(50, 224, 196, 0.15);
-}
-ul.nav li.active {
-  background: #39A2DB;
-} */
-
-
-/*Pdf viewer*/
-/* #myDocs{
-  height: 400px;
+.switcherButton{
+  /* margin: 20% 0% 0% 20%; */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2.5% 15.5% 8%;
-  background-color:aquamarine; 
-  border-radius: 2em;
-  padding: 0.4em 1.4em;
-} */
+}
 
-/*Past Projects*/
-.Switcher{
-  height: 400px;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  margin: 2.05% 15.5% 8%;
-  padding: 0.4em 1.4em;
-  background-color: aquamarine;
-  border-radius: 2em;
+.switcherButton button {
+  height: 25px
 }
 
 .ProjectHeader{
   text-align: center;
-}
-
-/* .Navi {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellowgreen; */
   display: flex;
-  overflow-y: scroll;
-  flex-wrap: wrap;
+
+  /* margin: 5px 45% 5px; */
 }
-
-#HomeButton {
-  display: grid;
-  align-content: center;
-  margin: 50% 15%;
-} */
-
-
-/*Skills*/
-/* .RadarChart{
-  display: flex;
-  justify-content:baseline;
-  width: 20%;
-  height: 20%;
-  margin: 1.2%;
-} */
 
 .Certificate{
   padding: 0% 1%
 }
 
+#spacer {
+  height: 50px;
+}
+
 /* Footer*/
 #Footer {
   position: fixed;
-  padding: 10px 10px 0px 10px;
   bottom: 0;
+  left: 0;
+  height: 5%;
+  padding: 10px 0px 0px 0px;
   width: 100%;
-  height: 50px;
   background: aquamarine;
-  display: flex;
-  align-items: center;
 }

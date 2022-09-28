@@ -11,7 +11,7 @@ function Skills(){
     return(
         <div id="ContentContainer">
             <div className="RadarChart">
-                <p>Programming Languages</p>
+                <h4>Programming Languages</h4>
                 <RadarChart outerRadius={90} width={500} height={180} data={pLanguages}>
                     <PolarGrid/>
                     <PolarAngleAxis dataKey="subject"/>
@@ -27,7 +27,7 @@ function Skills(){
             </div>
 
             <div className="RadarChart">
-                <p>Full-Stack Frameworks</p>
+                <h4>Full-Stack Frameworks</h4>
                 <RadarChart outerRadius={90} width={500} height={180} data={FSFrameworks}>
                     <PolarGrid/>
                     <PolarAngleAxis dataKey="subject"/>

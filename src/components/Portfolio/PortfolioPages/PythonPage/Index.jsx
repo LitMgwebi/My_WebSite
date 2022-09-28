@@ -7,7 +7,7 @@ function Index({navi}){
     const height = "150"
     return(
         <div className="index">
-            <Card className='card'>
+            <Card className='switcherCard'>
                 <CardActionArea 
                     onClick={() => navi("simpleCalculator") }
                 >

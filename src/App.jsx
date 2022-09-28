@@ -22,26 +22,22 @@ import {
 function App() {
   return (
     <div className="App">
-      <Header/>
-
-      <div>
-        <Router>
-          <div>
-            <Routes>
-              <Route path="/" element={<Home/>}/>
-              <Route path="/portfolio" element={<Portfolio/>}/>
-              <Route path="/about" element={<About/>}/>
-              <Route path="/abilities" element={<Abilities/>}/>
-              <Route path="/portfolio/react" element={<ReactSwitcher/>}/>
-              <Route path="/portfolio/python" element={<PythonSwitcher/>}/>
-              <Route path="/portfolio/mern" element={<MernSwitcher/>}/>
-            </Routes>
-          </div>
-        </Router>
-      </div>
-
-      <div className="spacer"></div>
-      <Footer/>
+      <Router>
+        <div id="Content">
+          <Header/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/portfolio" element={<Portfolio/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/abilities" element={<Abilities/>}/>
+            <Route path="/portfolio/react" element={<ReactSwitcher/>}/>
+            <Route path="/portfolio/python" element={<PythonSwitcher/>}/>
+            <Route path="/portfolio/mern" element={<MernSwitcher/>}/>
+          </Routes>
+        </div>
+        <div id="spacer"></div>
+        <Footer/>
+      </Router>
     </div>
   );
 }

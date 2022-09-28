@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Index from "./Index";
-import{Home} from "../../../Misc/Links";
+import { useNavigate } from "react-router-dom";
 import ArtBlog from "./ArtBlog";
+import SocialLinks from "../../../Misc/SocialLinks";
 
 function MernSwitcher() {
     const [navi, setNavi] = useState("index");
+    let navigate = useNavigate();
 
     const changeChoice = (navi) => {
         setNavi(navi);
@@ -16,11 +18,14 @@ function MernSwitcher() {
                 <h2>M.E.R.N Projects</h2>
             </div>
             <div className="Switcher">
-                <Home/>
-                <div className="Navi">
+                <div className="switcherButton">
+                    <button onClick={() => {navigate("/portfolio");}}>Back</button>
+                </div>
+                <div className="switcherNavi">
                     {navi === "artBlog" ? <ArtBlog navi={changeChoice}/>:   <Index navi={changeChoice}/>}
                 </div>
-            </div>    
+            </div>  
+            <SocialLinks/>  
         </div>
     );
 }

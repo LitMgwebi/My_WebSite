@@ -87,8 +87,12 @@ function Dev() {
 function Home(){
     return(
         <div className="siteLink">
-            <Link to="/">
+            <Link 
+                to="/"
+                state="home"
+            >
                 <img className="siteLogo" src={home} alt="Home" />
+                <h6>Home</h6>
             </Link>
         </div>
     );
@@ -97,8 +101,12 @@ function Home(){
 function About(){
     return(
         <div className="siteLink">
-            <Link to="/about">
-                <img className="siteLogo" src={about} alt="Home" />
+            <Link 
+                to="/about"
+                state={"about"}    
+            >
+                <img className="siteLogo" src={about} alt="About" />
+                <h6>About</h6>
             </Link>
         </div>
     );
@@ -107,8 +115,12 @@ function About(){
 function Abilities(){
     return(
         <div className="siteLink">
-            <Link to="/abilities">
-                <img className="siteLogo" src={abilities} alt="Home" />
+            <Link 
+                to="/abilities"
+                state={"abilities"}
+            >
+                <img className="siteLogo" src={abilities} alt="Abilities" />
+                <h6>Abilities</h6>
             </Link>
         </div>
     );
@@ -117,8 +129,12 @@ function Abilities(){
 function Portfolio(){
     return(
         <div className="siteLink">
-            <Link to="/portfolio">
-                <img className="siteLogo" src={portfolio} alt="Home" />
+            <Link 
+                to="/portfolio"
+                state={"portfolio"}
+            >
+                <img className="siteLogo" src={portfolio} alt="Portfolio" />
+                <h6>Portfolio</h6>
             </Link>
         </div>
     );

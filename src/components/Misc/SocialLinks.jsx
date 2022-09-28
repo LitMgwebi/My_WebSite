@@ -3,7 +3,7 @@ import {Github, LinkedIn, Twitter, Instagram, Reddit, Tiktok, Dev} from "./Links
 function SocialLinks() {
     return(
         <div className="socialLinks">
-            <Github/> <LinkedIn/> <Twitter/> <Twitter/> <Instagram/> <Reddit/> <Tiktok/> <Dev/>
+            <Github/> <LinkedIn/> <Twitter/> <Instagram/> <Reddit/> <Tiktok/> <Dev/>
         </div>
     );
 }
