@@ -7,7 +7,7 @@ function Home() {
         <div id="Home">
             <Intro/>
 
-            <div className="siteLinks">
+            <div className="homeLinks">
                 <Abilities/> <About/> <Portfolio/>
             </div>
             

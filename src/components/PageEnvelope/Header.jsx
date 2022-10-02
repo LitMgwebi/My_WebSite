@@ -1,5 +1,7 @@
-import {Home, Portfolio, About, Abilities} from "../Misc/Links";
+// import {headerHome, headerPortfolio, headerAbout, headerAbilities} from "../Misc/Links";
+import { HeaderAbilities, HeaderHome, HeaderPortfolio, HeaderAbout } from "../Misc/Links";
 import {useLocation} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Header() {
     const location = useLocation();
@@ -9,7 +11,7 @@ function Header() {
     function inAbout(){
         return(
             <div className="headerLinks">
-                <Home/> <Portfolio/> <Abilities/>
+                <HeaderHome/> <HeaderPortfolio/> <HeaderAbilities/>
             </div>
         )
     }
@@ -17,7 +19,7 @@ function Header() {
     function inAbilities(){
         return(
             <div className="headerLinks">
-                <Home/> <Portfolio/> <About/>
+                <HeaderHome/> <HeaderPortfolio/> <HeaderAbout/>
             </div>
         )
     }
@@ -25,7 +27,7 @@ function Header() {
     function inPortfolio(){
         return(
             <div className="headerLinks">
-                <Home/> <Abilities/> <About/>
+                <HeaderHome/> <HeaderAbilities/> <HeaderAbout/>
             </div>
         )
     }
@@ -33,14 +35,15 @@ function Header() {
     function inHome() {
         return(
             <div className="headerLinks">
-                <Portfolio/> <Abilities/> <About/>
+                <HeaderPortfolio/> <HeaderAbilities/> <HeaderAbout/>
             </div>
         )
     }
     return (
         <header id="Header">
-            <p>Lithi Mgwebi</p>
-
+            <Link to="/" id="HeaderName">
+                Lithi Mgwebi
+            </Link>
            <div> {page === "about" ? inAbout(): page==="portfolio" ? inPortfolio() : page === "abilities"  ? inAbilities() : inHome()}</div>
         </header>
     )

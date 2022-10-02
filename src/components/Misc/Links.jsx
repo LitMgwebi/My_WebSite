@@ -1,14 +1,14 @@
-import github from "../../icons/Github.svg";
-import linkedin from "../../icons/LinkedIn.svg";
-import reddit from "../../icons/Reddit.svg";
-import twitter from "../../icons/Twitter.svg";
-import instagram from "../../icons/Instagram.svg";
-import tiktok from "../../icons/Tiktok.svg";
+import github from "../../icons/github.svg";
+import linkedin from "../../icons/linkedin.svg";
+import reddit from "../../icons/reddit.svg";
+import twitter from "../../icons/twitter.svg";
+import instagram from "../../icons/instagram.svg";
+import tiktok from "../../icons/tiktok.svg";
 import dev from "../../icons/DEV.svg";
 import about from "../../icons/About.svg";
 import abilities from "../../icons/Abilities.svg";
 import portfolio from "../../icons/Portfolio.svg";
-import home from "../../icons/Home.svg";
+import home from "../../icons/home.svg";
 import {Link} from "react-router-dom";
 
 //#region Social Links
@@ -92,7 +92,9 @@ function Home(){
                 state="home"
             >
                 <img className="siteLogo" src={home} alt="Home" />
-                <h6>Home</h6>
+                <div className="siteLinkHeader">
+                   <p>Home</p>
+                </div>
             </Link>
         </div>
     );
@@ -106,7 +108,9 @@ function About(){
                 state={"about"}    
             >
                 <img className="siteLogo" src={about} alt="About" />
-                <h6>About</h6>
+                <div className="siteLinkHeader">
+                    <p>About</p>
+                </div>
             </Link>
         </div>
     );
@@ -120,7 +124,9 @@ function Abilities(){
                 state={"abilities"}
             >
                 <img className="siteLogo" src={abilities} alt="Abilities" />
-                <h6>Abilities</h6>
+                <div className="siteLinkHeader">
+                    <p>Abilities</p>
+                </div>
             </Link>
         </div>
     );
@@ -134,7 +140,9 @@ function Portfolio(){
                 state={"portfolio"}
             >
                 <img className="siteLogo" src={portfolio} alt="Portfolio" />
-                <h6>Portfolio</h6>
+                <div className="siteLinkHeader">
+                    <p>Portfolio</p>
+                </div>
             </Link>
         </div>
     );
@@ -142,4 +150,71 @@ function Portfolio(){
 
 //#endregion
 
-export {Github, LinkedIn, Twitter, Instagram, Reddit, Tiktok, Dev, Home, Abilities, About, Portfolio}
+//#region Header Links
+function HeaderHome(){
+    return(
+        <div className="headerLink">
+            <Link 
+                to="/"
+                state="home"
+            >
+                <img className="headerLogo" src={home} alt="Home" />
+                {/* <div className="headerText">
+                   <p>Home</p>
+                </div> */}
+            </Link>
+        </div>
+    );
+}
+
+function HeaderAbout(){
+    return(
+        <div className="headerLink">
+            <Link 
+                to="/about"
+                state={"about"}    
+            >
+                <img className="headerLogo" src={about} alt="About" />
+                {/* <div className="headerText">
+                    <p>About</p>
+                </div> */}
+            </Link>
+        </div>
+    );
+}
+
+function HeaderAbilities(){
+    return(
+        <div className="headerLink">
+            <Link 
+                to="/abilities"
+                state={"abilities"}
+            >
+                <img className="headerLogo" src={abilities} alt="Abilities" />
+                {/* <div className="headerText">
+                    <p>Abilities</p>
+                </div> */}
+            </Link>
+        </div>
+    );
+}
+
+function HeaderPortfolio(){
+    return(
+        <div className="headerLink">
+            <Link 
+                to="/portfolio"
+                state={"portfolio"}
+            >
+                <img className="headerLogo" src={portfolio} alt="Portfolio" />
+                {/* <div className="headerText">
+                    <p>Portfolio</p>
+                </div> */}
+            </Link>
+        </div>
+    );
+}
+
+//#endregion
+
+export {HeaderAbilities, HeaderAbout, HeaderHome, HeaderPortfolio, Github, LinkedIn, Twitter, Instagram, Reddit, Tiktok, Dev, Home, Abilities, About, Portfolio}
