@@ -5,9 +5,9 @@ import twitter from "../../icons/twitter.svg";
 import instagram from "../../icons/instagram.svg";
 import tiktok from "../../icons/tiktok.svg";
 import dev from "../../icons/DEV.svg";
-import about from "../../icons/About.svg";
-import abilities from "../../icons/Abilities.svg";
-import portfolio from "../../icons/Portfolio.svg";
+import about from "../../icons/about.svg";
+import abilities from "../../icons/abilities.svg";
+import portfolio from "../../icons/portfolio.svg";
 import home from "../../icons/home.svg";
 import {Link} from "react-router-dom";
 
@@ -159,9 +159,6 @@ function HeaderHome(){
                 state="home"
             >
                 <img className="headerLogo" src={home} alt="Home" />
-                {/* <div className="headerText">
-                   <p>Home</p>
-                </div> */}
             </Link>
         </div>
     );
@@ -175,9 +172,6 @@ function HeaderAbout(){
                 state={"about"}    
             >
                 <img className="headerLogo" src={about} alt="About" />
-                {/* <div className="headerText">
-                    <p>About</p>
-                </div> */}
             </Link>
         </div>
     );
@@ -191,9 +185,6 @@ function HeaderAbilities(){
                 state={"abilities"}
             >
                 <img className="headerLogo" src={abilities} alt="Abilities" />
-                {/* <div className="headerText">
-                    <p>Abilities</p>
-                </div> */}
             </Link>
         </div>
     );
@@ -207,9 +198,6 @@ function HeaderPortfolio(){
                 state={"portfolio"}
             >
                 <img className="headerLogo" src={portfolio} alt="Portfolio" />
-                {/* <div className="headerText">
-                    <p>Portfolio</p>
-                </div> */}
             </Link>
         </div>
     );

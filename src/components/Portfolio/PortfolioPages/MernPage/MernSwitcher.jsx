@@ -15,7 +15,7 @@ function MernSwitcher() {
     return(
         <div>
             <div className="ProjectHeader">
-                <h2>M.E.R.N Projects</h2>
+                <h1>M.E.R.N Projects</h1>
             </div>
             <div className="Switcher">
                 <div className="switcherButton">

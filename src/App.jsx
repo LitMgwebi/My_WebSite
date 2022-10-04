@@ -24,19 +24,20 @@ function App() {
     <div className="App">
       <Router>
         <div id="Content">
-          <Header/>
+
+          <Header />
           <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/portfolio" element={<Portfolio/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/abilities" element={<Abilities/>}/>
-            <Route path="/portfolio/react" element={<ReactSwitcher/>}/>
-            <Route path="/portfolio/python" element={<PythonSwitcher/>}/>
-            <Route path="/portfolio/mern" element={<MernSwitcher/>}/>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/abilities" element={<Abilities />} />
+            <Route path="/portfolio/react" element={<ReactSwitcher />} />
+            <Route path="/portfolio/python" element={<PythonSwitcher />} />
+            <Route path="/portfolio/mern" element={<MernSwitcher />} />
           </Routes>
         </div>
-        <div id="spacer"></div>
-        <Footer/>
+          <Footer/>
+
       </Router>
     </div>
   );

@@ -14,7 +14,7 @@ function ReactSwitcher() {
     return(
         <div>
             <div className="ProjectHeader">
-                <h2>React Projects</h2>
+                <h1>React Projects</h1>
             </div>
             <div className="Switcher">
                 <div className="switcherButton">

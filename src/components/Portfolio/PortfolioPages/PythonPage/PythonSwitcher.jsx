@@ -14,7 +14,7 @@ function PythonSwitcher(){
     return(
         <div>
             <div className="ProjectHeader">
-                <h2>Python Projects</h2>
+                <h1>Python Projects</h1>
             </div>
             <div className="Switcher">
                 <div className="switcherButton">

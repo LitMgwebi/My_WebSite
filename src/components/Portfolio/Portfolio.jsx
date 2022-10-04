@@ -3,7 +3,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import SocialLinks from '../Misc/SocialLinks';
-// import React from "./PastProjects/React";
 import {Link} from "react-router-dom";
 
 const Portfolio = () => {

@@ -1,39 +1,58 @@
+#Content{
+  margin-top: 4%;
+  /* position: relative; */
+  min-height: 82.5vh;
+}
+
+
+/* Universal Config*/
+.ProjectHeader{
+  text-align: center;
+}
+#ContentContainer {
+  overflow: auto;
+  height: auto;
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1% 10%;
+  text-align: center;
+  background-color: aquamarine;
+  border-radius: 2em;
+  padding: 0.4em 1.4em;
+}
+
+
 /*Header config*/
 #Header{
-  position:relative;
-  background-color: tomato;
+  position:fixed;
+  top: 0;
+  /* background-color: blueviolet; */
   width: 100%;
-  height: auto;
-  /* margin-bottom: 5px; */
-  display: inline-block;
+  left:0;
+  display: flex;
+  align-items: center;
+  /* padding: 1% 0%; */
+  height: 7%;
+  justify-content: space-evenly;
+  z-index: 100;
 }
 #HeaderName {
-  margin: 1.5% 5% 1%;
-  float: left;
   color: black;
 }
 .headerLinks {
   display: flex;
-  /* float: right; */
   flex-direction: row;
-  /* width: 10%; */
-  /* padding-right: 10%; */
   margin-top: 1.2%;
-  /* margin: 0.5% 0.9% 0.9% 0% */
 }
 .headerLink {
-  /* padding: 0% 2%; */
   width: 30px;
-}
-.headerText{
-  font-size: 8px;
-  text-align: center;
 }
 .headerLogo {
   border-radius: 1.5rem;
-  width: 20px;
-  height: 20px;
-  /* padding: 5% 5% 5%; */
+  width: 23px;
+  height: 23px;
 }
 
 
@@ -42,33 +61,32 @@
   border-radius: 1.5rem;
   width: 80px;
   height: 80px;
-  /* padding: 5% 5% 5%; */
 }
 .siteLinkHeader{
   text-align: center;
-  /* padding: 0px; */
 }
 .siteLink {
   padding: 0% 2.5%;
-  /* width: 80px; */
 }
 .homeLinks {
-  margin: 5px 43% 5px;
-  
+  justify-content: center;  
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 1.8% 0%;
+  margin: 1%
 }
 
 
-
-
+/* Social Links */
 .socialLinks {
-  margin: 5px 43% 5px;
+  justify-content: center;
   display: flex;
+  align-items: center;
+  padding: 1%;
   flex-direction: row;
-
+  /* background-color: turquoise; */
 }
-
 .socialLink{
   padding: 0% 0.2%;
   width: auto;
@@ -80,29 +98,23 @@
 /*Intro Config*/
 #Intro {
   border-radius: 2rem;
-  height: 325px;
-  margin: 2.5% 4%;
+  height: 250px;
+  margin: 0% 4%;
   padding: 1.5%;
-  width: 88%;
   background-color:aquamarine;
   justify-content:center;
   display:flex;
   align-content: center;
 }
-
 .IntroImage{
   width: 350px;
   height: 400px;
 }
 .IntroImage img{
-  /* display: block; */
-  margin-left: 50%;
-  margin-right: 50%;
+  margin: 0% 50%;
   width: 50%;
-  /* object-fit:fill; */
   border-radius:100%;
 }
-
 .logo {
   border-radius: 2rem;
   width: 23px;
@@ -110,40 +122,24 @@
   padding: 5% 5% 5%;
 }
 
-/* Portfolio*/
-#ContentContainer {
-  overflow: auto;
-  height: auto;
-  max-height: 400px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 2.05% 10% 2%;
-  text-align: center;
-  background-color: aquamarine;
-  border-radius: 2em;
-  padding: 0.4em 1.4em;
-}
 
+/* Portfolio Pages*/
 .Switcher{
   height: 400px;
   display: grid;
   grid-template-columns: 15% 85%;
-  margin: 2.05% 10% 2%;
+  margin: 1% 10%;
   padding: 0.4em 1.4em;
   background-color: aquamarine;
   border-radius: 2em;
 }
-
 .switcherCard{
   width: auto;
   height: auto;
   max-width: 250px;
   max-height: 80%;
   margin: 3%;
-
 }
-
 .card{
   width: auto;
   height: auto;
@@ -152,60 +148,38 @@
   margin: 3.5%;
 }
 
-.homeLogo {
-  width: 35px;
-  height: 35px;
-  padding: 5% 0% 5%;
-}
 
+/* Switcher Config*/
 .switcherNavi{
   display: flex;
   overflow-y: auto;
   flex-wrap: wrap;
 }
-
 .switcherButton{
-  /* margin: 20% 0% 0% 20%; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.switcherButton button {
-  height: 25px
-}
 
-.ProjectHeader{
-  text-align: center;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  /* background-color: yellowgreen; */
-  display: flex;
-
-  /* margin: 5px 45% 5px; */
-}
-
-.siteLinkHeader{
-  text-align: center;
-  padding: 0px;
-}
-
+/* Certification Config*/
 .Certificate{
   padding: 0% 1%
 }
 
-#spacer {
-  height: 50px;
-}
 
 /* Footer*/
 #Footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 5%;
-  padding: 10px 0px 0px 0px;
+  /* position:fixed; */
+  /* bottom: 0; */
+  /* left: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  /* padding: 10px 0px 0px 0px; */
+  margin-top: auto;
+  
   width: 100%;
   background: aquamarine;
 }
