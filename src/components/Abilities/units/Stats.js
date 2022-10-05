@@ -4,7 +4,7 @@ const pLanguages = [
         A: 70,
     },
     {
-        subject: "Javascript/TypeScript",
+        subject: "Javascript",
         A: 85
     },
     {

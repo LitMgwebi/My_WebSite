@@ -50,7 +50,6 @@
   width: 30px;
 }
 .headerLogo {
-  border-radius: 1.5rem;
   width: 23px;
   height: 23px;
 }
@@ -127,18 +126,22 @@
 .Switcher{
   height: 400px;
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 10% 90%;
   margin: 1% 10%;
   padding: 0.4em 1.4em;
   background-color: aquamarine;
   border-radius: 2em;
+}
+.portfolioLogo{
+  width: 28px;
+  height: 28px;
 }
 .switcherCard{
   width: auto;
   height: auto;
   max-width: 250px;
   max-height: 80%;
-  margin: 3%;
+  margin: 5%;
 }
 .card{
   width: auto;
@@ -154,6 +157,7 @@
   display: flex;
   overflow-y: auto;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .switcherButton{
   display: flex;
@@ -170,16 +174,11 @@
 
 /* Footer*/
 #Footer {
-  /* position:fixed; */
-  /* bottom: 0; */
-  /* left: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
-  /* padding: 10px 0px 0px 0px; */
   margin-top: auto;
-  
   width: 100%;
   background: aquamarine;
 }

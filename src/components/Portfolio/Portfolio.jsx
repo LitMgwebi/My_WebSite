@@ -14,7 +14,10 @@ const Portfolio = () => {
             </div>
             <div id="ContentContainer">
                 <Card className='card'>
-                    <Link to="/portfolio/python">
+                    <Link 
+                        to="/portfolio/python" 
+                        state={"portfolio"}
+                    >
                         <CardActionArea>
                             <CardMedia
                                 component="img"
@@ -32,7 +35,10 @@ const Portfolio = () => {
                 </Card>
                 
                 <Card className='card'>
-                    <Link to="/portfolio/mern">
+                    <Link 
+                        to="/portfolio/mern"
+                        state={"portfolio"}    
+                    >
                         <CardActionArea>
                             <CardMedia
                                 component="img"
@@ -50,7 +56,10 @@ const Portfolio = () => {
                 </Card>
 
                 <Card className='card'>
-                    <Link to="/portfolio/react">
+                    <Link 
+                        to="/portfolio/react"
+                        state={"portfolio"}
+                    >
                         <CardActionArea>
                             <CardMedia
                                 component="img"

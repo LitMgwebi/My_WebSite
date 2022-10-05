@@ -8,11 +8,15 @@ import {
 } from "recharts";
 
 function Skills(){
+    const outerRadius= 60;
+    const width = 350;
+    const height = 160;
+    
     return(
         <div id="ContentContainer">
             <div className="RadarChart">
                 <h4>Programming Languages</h4>
-                <RadarChart outerRadius={90} width={500} height={180} data={pLanguages}>
+                <RadarChart outerRadius={outerRadius} width={width} height={height} data={pLanguages}>
                     <PolarGrid/>
                     <PolarAngleAxis dataKey="subject"/>
                     <PolarRadiusAxis/>
@@ -28,7 +32,7 @@ function Skills(){
 
             <div className="RadarChart">
                 <h4>Full-Stack Frameworks</h4>
-                <RadarChart outerRadius={90} width={500} height={180} data={FSFrameworks}>
+                <RadarChart outerRadius={outerRadius} width={width} height={height} data={FSFrameworks}>
                     <PolarGrid/>
                     <PolarAngleAxis dataKey="subject"/>
                     <PolarRadiusAxis/>

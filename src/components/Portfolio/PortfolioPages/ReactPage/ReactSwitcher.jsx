@@ -3,6 +3,9 @@ import MyWebsite from "./MyWebsite";
 import Index from "./Index";
 import { useNavigate } from "react-router-dom";
 import SocialLinks from "../../../Misc/SocialLinks";
+import portfolio from "../../../../icons/portfolio.svg";
+import {Link} from "react-router-dom";
+
 
 function ReactSwitcher() {
     const [navi, setNavi] = useState("index");
@@ -18,7 +21,12 @@ function ReactSwitcher() {
             </div>
             <div className="Switcher">
                 <div className="switcherButton">
-                    <button onClick={() => {navigate("/portfolio");}}>Back</button>
+                    <Link
+                        to="/portfolio"
+                        state={"portfolio"}
+                    >
+                        <img className="portfolioLogo" src={portfolio} alt="Portfolio" />
+                    </Link>
                 </div>
                 <div className="switcherNavi">
                     {navi === "myWebsite" ? <MyWebsite navi={changeChoice}/>:   <Index navi={changeChoice}/>}
