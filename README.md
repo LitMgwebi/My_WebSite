@@ -1,3 +1,12 @@
+# Program Details
+
+## Description
+
+This program is my portfolio site that you are currently on. It is the hub where all of my social media sites will converge. This site is also a means I will use to showcase my current and future github projects. From this centralized website, people will be able to view all of my github projects, get means of which to contact me, and get linked to all of social media.
+
+## Packages Used
+ReactJS, React-Dom, React-Pdf, React-Router-Dom, Recharts, Swiper, React-Slick, React-Router, React-pageflip and Material-UI
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,17 +77,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-# Program Details
-
-## Description
-
-Hi world, welcome. This is program is my website. 
-
-## Purpose
-
-This program is the hub where all of my social media sites will converge. This site is also a means I will use to showcase my current and future github projects. From this centralized website, people will be able to view all of my github projects, get means of which to contact me, and get linked to all of social media.
-
-## Packages Used
-React, React-Dom, React-Pdf, React-Router-Dom, React-Scrips, React-Slick and Material-UI
