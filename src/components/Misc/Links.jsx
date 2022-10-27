@@ -4,7 +4,7 @@ import reddit from "../../icons/reddit.svg";
 import twitter from "../../icons/twitter.svg";
 import instagram from "../../icons/instagram.svg";
 import tiktok from "../../icons/tiktok.svg";
-import dev from "../../icons/DEV.svg";
+import dev from "../../icons/dev.svg";
 import about from "../../icons/about.svg";
 import abilities from "../../icons/abilities.svg";
 import portfolio from "../../icons/portfolio.svg";

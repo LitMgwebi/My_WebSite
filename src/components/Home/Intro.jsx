@@ -1,9 +1,9 @@
 const Intro = () => {
     return (
-        <div id="Intro">
+        <div id="ContentContainer">
             <div className="IntroImage">
                 <img  
-                    src={require("../../media/IMG-20210503-WA0027.jpg")} 
+                    src={require("../../media/MainPhoto.png")} 
                     alt="Lithi" 
                 />
             </div>

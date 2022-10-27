@@ -1,9 +1,31 @@
-function ArtBlog({navi}) {
+import ProgramTemplate from "../../../Misc/ProgramTemplate";
+
+function Stack(){
+    return(
+        <div className="programStack">
+            <div className="ProjectHeader">
+                <h4>Stack</h4>
+            </div>
+            <ul>
+                <li>React</li>
+                <li>React-pdf</li>
+            </ul>
+        </div>
+    )
+}
+function ArtBlog() {
     return (
-        <div id="myWebsite">
-            <h3>ArtBlog</h3>
-            <p>Description</p>
-            <button onClick={() => navi("index") }>Back</button>
+        <div>
+            <ProgramTemplate
+                link="/portfolio/mern"
+                title="ArtBlog"
+                githubLink="https://github.com/LitMgwebi/My_WebSite"
+                description="Welcome ladies and gentlemen, to the world renowned ArtBlog"
+                programStack={<Stack/>}
+                firstImage={"firstImage"}
+                secondImage={"secondImage"}
+                thirdImage={"thirdImage"}
+            />
         </div>
     );
 }

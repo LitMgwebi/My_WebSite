@@ -1,13 +1,64 @@
-#Content{
-  margin-top: 4%;
-  /* position: relative; */
-  min-height: 82.5vh;
-}
-
-
 /* Universal Config*/
+:root {
+  --backgroundColor: #C2DED1;
+  --divColour: #ECE5C7;
+
+  --logoColor: invert(78%) sepia(6%) saturate(740%) hue-rotate(360deg) brightness(102%) contrast(87%);
+  --cardColor: #CDC2AE;
+  
+  --textColour: #354259;
+  
+}
+[data-theme='dark'] {
+  --backgroundColor: #222831;
+  --divColour: #393E46;
+  
+  --logoColor: invert(44%) sepia(97%) saturate(705%) hue-rotate(335deg) brightness(85%) contrast(97%);
+  --cardColor: #D65A31;
+
+  --textColour: #EEEEEE;
+}
+.App{
+  position:fixed;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  background-color: var(--backgroundColor);
+  width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left:0;
+  top:0;
+}
+.ProgramHeader{
+  display: grid;
+  padding: 15px;
+  grid-template-columns: 60px 430px 60px;
+  width: 550px;
+  color: var(--textColour);
+  place-items: center;
+  align-items: center;
+  margin: auto;
+}
+#Content{
+  /* margin-top: 4%; */
+  min-height: 85.5vh;
+}
+a {
+  text-decoration: none;
+  color: var(--textColour);
+}
+a:hover {
+  text-decoration: underline;
+}
 .ProjectHeader{
+  color: var(--textColour);
+  padding: 15px;
   text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row
 }
 #ContentContainer {
   overflow: auto;
@@ -16,169 +67,224 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 1% 10%;
+  width: auto;
+  margin: 0% 5% 3%;
   text-align: center;
-  background-color: aquamarine;
-  border-radius: 2em;
+  background-color: var(--divColour);
   padding: 0.4em 1.4em;
+  color: var(--textColour);
 }
 
-
+/* Card Config */
+.card{
+  width: 250px;
+  height: 300px;
+  margin: 3%;
+}
+.cardContent:hover{
+  /* width: 265px; */
+  background-color:  var(--divColour);
+}
+.cardMedia{
+  height: 45%
+}
+.cardContent{
+  height: 55%;
+  background-color: var(--cardColor);
+}
 /*Header config*/
 #Header{
-  position:fixed;
-  top: 0;
-  /* background-color: blueviolet; */
   width: 100%;
-  left:0;
-  display: flex;
-  align-items: center;
-  /* padding: 1% 0%; */
-  height: 7%;
-  justify-content: space-evenly;
-  z-index: 100;
+  display: inline-grid;
+  grid-template-columns: 33% 33% 33%;
+  height: 50px;
+  background-color: var(--divColour);
+  justify-content: center;
 }
-#HeaderName {
-  color: black;
+.headerName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerName a{
+  color: var(--textColour);
+}
+.headerButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .headerLinks {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  margin-top: 1.2%;
+  width: auto;
 }
 .headerLink {
   width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
 }
 .headerLogo {
   width: 23px;
   height: 23px;
 }
-
+.headerLogo:hover {
+  width: 26px;
+  height: 26px;
+}
 
 /*Site Links*/
 .siteLogo {
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
+  width: 75px;
+  height: 75px;
+
+}
+.siteLogo:hover {
   width: 80px;
   height: 80px;
+  z-index: 50;
 }
 .siteLinkHeader{
   text-align: center;
+  color: var(--textColour);
 }
 .siteLink {
-  padding: 0% 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  margin: 0% 2%;
+  width: 100px;
+  height: 120px;
 }
 .homeLinks {
   justify-content: center;  
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1.8% 0%;
-  margin: 1%
+  height: 120px;
+  margin: 0% 0% 0.5%;
+  /* background-color: white; */
 }
 
 
 /* Social Links */
+.logo {
+  border-radius: 2rem;
+  width: 25px;
+  height: 25px;
+  /* padding: 5% 5% 5%; */
+}
+.logo:hover{
+  width: 28px;
+  height: 28px;
+  z-index: 50;
+}
+.logo, .siteLogo, .headerLogo{
+  filter: var(--logoColor);
+}
 .socialLinks {
+  margin: 0%;
   justify-content: center;
   display: flex;
   align-items: center;
-  padding: 1%;
   flex-direction: row;
-  /* background-color: turquoise; */
 }
 .socialLink{
-  padding: 0% 0.2%;
+  padding: 1% 5%;
   width: auto;
+  /* background-color: wheat; */
+  height: 30px;
   max-width: 25px;
 }
 
 
-
 /*Intro Config*/
-#Intro {
-  border-radius: 2rem;
-  height: 250px;
-  margin: 0% 4%;
-  padding: 1.5%;
-  background-color:aquamarine;
-  justify-content:center;
-  display:flex;
-  align-content: center;
-}
 .IntroImage{
-  width: 350px;
-  height: 400px;
-}
-.IntroImage img{
-  margin: 0% 50%;
-  width: 50%;
-  border-radius:100%;
-}
-.logo {
-  border-radius: 2rem;
-  width: 23px;
-  height: 23px;
-  padding: 5% 5% 5%;
-}
-
-
-/* Portfolio Pages*/
-.Switcher{
-  height: 400px;
-  display: grid;
-  grid-template-columns: 10% 90%;
-  margin: 1% 10%;
-  padding: 0.4em 1.4em;
-  background-color: aquamarine;
-  border-radius: 2em;
-}
-.portfolioLogo{
-  width: 28px;
-  height: 28px;
-}
-.switcherCard{
-  width: auto;
-  height: auto;
-  max-width: 250px;
-  max-height: 80%;
-  margin: 5%;
-}
-.card{
-  width: auto;
-  height: auto;
-  max-width: 240px;
-  max-height: 40%;
-  margin: 3.5%;
-}
-
-
-/* Switcher Config*/
-.switcherNavi{
+  width: 100%;
+  margin: 1%;
+  height: 175px;
   display: flex;
-  overflow-y: auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.switcherButton{
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
+.IntroImage img{
+  width: 170px;
+  border-radius:100%;
+}
+.IntroParagraph{
+  margin: 1%;
+  text-align: center;
+  color: var(--textColour);
+}
 
 
-/* Certification Config*/
+/* Certification Config */
 .Certificate{
   padding: 0% 1%
 }
 
 
+/* Program Config */
+.ProjectHeader{
+  height: 30px;
+  text-align: center;
+  margin: 1%;
+}
+.programImage{
+  width: 80%;
+  margin: 2% 0%;
+}
+.programImage img{
+  width: 90%;
+}
+.programInfo{
+  display: flex;
+  flex-direction: row;
+}
+.programStack {
+  width: 50%;
+  text-align: center;
+}
+.stackList{
+  list-style-type: none;
+  margin:0% 0%;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+.stackList li{
+  display: flex;
+  justify-content: center;
+  }
+.programDescription{
+  width:auto;
+  max-width:50%;
+  text-align: justify;
+}
+.programDescription p{
+  margin:0% 3% 3%;
+}
+
+/*About*/
+#About{
+  padding: 1% 5%;
+  text-align: justify;
+}
 /* Footer*/
 #Footer {
+  background-color: var(--divColour);
+  color: var(--textColour);
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 50px;
-  margin-top: auto;
+  justify-content: space-around;
+  height: 70px;
+  margin-top: 25px;
   width: 100%;
-  background: aquamarine;
 }

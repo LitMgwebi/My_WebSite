@@ -1,6 +1,6 @@
-import { Document, Page, Outline } from "react-pdf/dist/esm/entry.webpack";
-import sqlCertificate from "../../media/SQL_Certificate.pdf";
-import googleAdsCertificate from "../../media/Google_Ads_Certification.pdf";
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
+import sqlCertificate from "../../media/Certificates/SQL_Certificate.pdf";
+import googleAdsCertificate from "../../media/Certificates/Google_Ads_Certification.pdf";
 
 function Certifications() {
   const height = 350;

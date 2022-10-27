@@ -1,7 +1,9 @@
+import SocialLinks from "../Misc/SocialLinks";
 const Footer = () => {
     return (
         <footer id="Footer">
-            @2022LithiMgwebi
+            <p>@2022LithiMgwebi</p>
+            <SocialLinks/>
         </footer>
     );
 }
