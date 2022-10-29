@@ -36,8 +36,6 @@ function App() {
   return (
     <div className="App" data-theme={theme}>
       <Router>
-        <div id="Content">
-
           <Header theme={switchTheme} imgIcon={theme}/>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -51,9 +49,7 @@ function App() {
             <Route path="/portfolio/mern/artblog" element={<ArtBlog/>}/>
             <Route path="/portfolio/react/mywebsite" element={<MyWebsite />} />
           </Routes>
-        </div>
           <Footer/>
-
       </Router>
     </div>
   );

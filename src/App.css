@@ -20,29 +20,25 @@
 }
 .App{
   position:fixed;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   scroll-behavior: smooth;
-  overflow-x: auto;
+  overflow: auto;
   background-color: var(--backgroundColor);
   width: 100%;
-  max-height: 100%;
+  height: 100vh;
   bottom: 0;
   left:0;
   top:0;
 }
 .ProgramHeader{
   display: grid;
-  padding: 15px;
-  grid-template-columns: 60px 430px 60px;
-  width: 550px;
+  width: 25rem;
+  padding: 0 0.5rem;
+  grid-template-columns: 2rem 21rem 2rem;
   color: var(--textColour);
   place-items: center;
   align-items: center;
   margin: auto;
-}
-#Content{
-  /* margin-top: 4%; */
-  min-height: 85.5vh;
 }
 a {
   text-decoration: none;
@@ -53,7 +49,7 @@ a:hover {
 }
 .ProjectHeader{
   color: var(--textColour);
-  padding: 15px;
+  padding: 0.1rem;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -63,12 +59,12 @@ a:hover {
 #ContentContainer {
   overflow: auto;
   height: auto;
-  max-height: 400px;
+  max-height: 25rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: auto;
-  margin: 0% 5% 3%;
+  width: 80%;
+  margin: 0% auto 3%;
   text-align: center;
   background-color: var(--divColour);
   padding: 0.4em 1.4em;
@@ -77,8 +73,8 @@ a:hover {
 
 /* Card Config */
 .card{
-  width: 250px;
-  height: 300px;
+  width: 15rem;
+  height: 20rem;
   margin: 3%;
 }
 .cardContent:hover{
@@ -86,10 +82,10 @@ a:hover {
   background-color:  var(--divColour);
 }
 .cardMedia{
-  height: 45%
+  height: 10rem
 }
 .cardContent{
-  height: 55%;
+  height: 10rem;
   background-color: var(--cardColor);
 }
 /*Header config*/
@@ -97,7 +93,7 @@ a:hover {
   width: 100%;
   display: inline-grid;
   grid-template-columns: 33% 33% 33%;
-  height: 50px;
+  height: 3rem;
   background-color: var(--divColour);
   justify-content: center;
 }
@@ -122,32 +118,33 @@ a:hover {
   width: auto;
 }
 .headerLink {
-  width: 30px;
-  height: 30px;
+  width: 1.9rem;
+  height: 1.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 3%;
+  padding: 0.3rem
 }
 .headerLogo {
-  width: 23px;
-  height: 23px;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 .headerLogo:hover {
-  width: 26px;
-  height: 26px;
+  width: 1.55rem;
+  height: 1.55rem;
 }
 
 /*Site Links*/
 .siteLogo {
   /* border-radius: 1.5rem; */
-  width: 75px;
-  height: 75px;
+  width: 5rem;
+  height: 5rem;
 
 }
 .siteLogo:hover {
-  width: 80px;
-  height: 80px;
+  width: 5.2rem;
+  height: 5.2rem;
   z-index: 50;
 }
 .siteLinkHeader{
@@ -160,30 +157,29 @@ a:hover {
   align-items: center;
   /* background-color: white; */
   margin: 0% 2%;
-  width: 100px;
-  height: 120px;
+  width: 6rem;
+  height: 6rem;
 }
 .homeLinks {
   justify-content: center;  
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 120px;
+  height: 8rem;
+  /* background-color: aquamarine; */
   margin: 0% 0% 0.5%;
-  /* background-color: white; */
 }
 
 
 /* Social Links */
 .logo {
   border-radius: 2rem;
-  width: 25px;
-  height: 25px;
-  /* padding: 5% 5% 5%; */
+  width: 1.35rem;
+  height: 1.35rem;
 }
 .logo:hover{
-  width: 28px;
-  height: 28px;
+  width: 1.5rem;
+  height: 1.5rem;
   z-index: 50;
 }
 .logo, .siteLogo, .headerLogo{
@@ -197,28 +193,26 @@ a:hover {
   flex-direction: row;
 }
 .socialLink{
-  padding: 1% 5%;
-  width: auto;
-  /* background-color: wheat; */
-  height: 30px;
-  max-width: 25px;
+  padding: 1% 1%;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 
 /*Intro Config*/
 .IntroImage{
   width: 100%;
-  margin: 1%;
-  height: 175px;
+  padding: 1rem;
+  height: auto;
   display: flex;
   justify-content: center;
 }
 .IntroImage img{
-  width: 170px;
+  width: 13rem;
   border-radius:100%;
 }
 .IntroParagraph{
-  margin: 1%;
+  padding: 0% 0% 1rem;
   text-align: center;
   color: var(--textColour);
 }
@@ -232,9 +226,10 @@ a:hover {
 
 /* Program Config */
 .ProjectHeader{
-  height: 30px;
+  height: 4rem;
+  /* background-color: white; */
   text-align: center;
-  margin: 1%;
+  /* margin: 1%; */
 }
 .programImage{
   width: 80%;
@@ -271,6 +266,51 @@ a:hover {
   margin:0% 3% 3%;
 }
 
+.Tabs {
+  width: 80%;
+  height: auto;
+  margin: 0.5rem auto 0rem;
+  color: var(--textColour);
+  border-radius: 2rem;
+  @media (max-width: 769px) {
+   padding: 1rem 0;
+  }
+}
+ul.nav {
+  width: 60%;
+  margin: 0 auto 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--backgroundColor);
+  border-radius: 2rem;
+  padding-left: 0px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+ul.nav li {
+  width: 50%;
+  padding: 0.1rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+ul.nav li:nth-child(2) {
+  border-radius: 0;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+ul.nav li:hover {
+  background: var(--divColour);
+}
+ul.nav li.active {
+  background: var(--cardColor);
+}
+
 /*About*/
 #About{
   padding: 1% 5%;
@@ -280,11 +320,12 @@ a:hover {
 #Footer {
   background-color: var(--divColour);
   color: var(--textColour);
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 70px;
-  margin-top: 25px;
+  justify-content: space-evenly;
+  height: 4rem;
+  /* margin-top: 25px; */
+  bottom:0;
   width: 100%;
 }
