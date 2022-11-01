@@ -68,6 +68,7 @@ a:hover {
   background-color: var(--divColour);
   padding: 0.4em 1.4em;
   color: var(--textColour);
+  max-height: 25rem;
 }
 
 /* Card Config */
@@ -117,87 +118,29 @@ a:hover {
   width: auto;
 }
 .headerLink {
+  width: 1.9rem;
+  height: 1.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-@media(orientation: landscape) {
-  .headerLink {
-    width: 1.9rem;
-    height: 1.9rem;
-  }
-  .headerLogo {
-    width: 1.4rem;
-    height: 1.4rem;
-  }
-  .headerLogo:hover {
-    width: 1.55rem;
-    height: 1.55rem;
-  }
-  .siteLogo {
-    /* border-radius: 1.5rem; */
-    width: 5rem;
-    height: 5rem;
-  
-  }
-  .siteLogo:hover {
-    width: 5.2rem;
-    height: 5.2rem;
-    z-index: 50;
-  }
-  .siteLink {
-    width: 6rem;
-    height: 6rem;
-  }
-  .homeLinks {
-    height: 8rem;
-    flex-direction: row;
-  }
-  #ContentContainer{
-    max-height: 25rem;
-  }
+.headerLogo {
+  width: 1.4rem;
+  height: 1.4rem;
 }
-
-@media(orientation: potrait){
-  .headerLink {
-    width: 1.6rem;
-    height: 1.6rem;
-  }
-  .headerLogo {
-    width: 1.1rem;
-    height: 1.1rem;
-  }
-  .headerLogo:hover {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  .siteLogo {
-    /* border-radius: 1.5rem; */
-    width: 4.6rem;
-    height: 4.6rem;
-  
-  }
-  .siteLogo:hover {
-    width: 4.8rem;
-    height: 4.8rem;
-    z-index: 50;
-  }
-  .siteLink {
-    width: 5.5rem;
-    height: 5.5rem;
-  }
-  .homeLinks {
-    height: 12rem;
-    flex-direction: column;
-  }
-  #ContentContainer{
-    max-height: 35rem;
-  }
+.headerLogo:hover {
+  width: 1.55rem;
+  height: 1.55rem;
 }
 
 /*Site Links*/
+.siteLogo {
+  width: 5rem;
+  height: 5rem;
+}
 .siteLogo:hover {
+  width: 5.2rem;
+  height: 5.2rem;
   z-index: 50;
 }
 .siteLinkHeader{
@@ -208,7 +151,8 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: white; */
+  width: 6rem;
+  height: 6rem;
   margin: 0% 2%;
 }
 .homeLinks {
@@ -216,6 +160,8 @@ a:hover {
   display: flex;
   align-items: center;
   margin: 0% 0% 1%;
+  height: 8rem;
+  flex-direction: row;
 }
 
 
