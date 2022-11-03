@@ -31,12 +31,17 @@ const ProgramTemplate = ({link, title, githubLink, description, programStack, fi
             <article id="ContentContainer">               
                 <div className="programInfo">
                     <div className="programDescription">
-                        <div className="ProjectHeader">
+                        <div>
                             <h4>Description</h4>
                         </div>
                         <p>{description}</p>
                     </div>
-                    {programStack}
+                    <div className="programStack">
+                        <div>
+                            <h4>Stack</h4>
+                        </div>
+                        {programStack}
+                    </div>
                 </div>
                 <div className="programImage">
                     <Swiper

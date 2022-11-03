@@ -1,3 +1,6 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
 /* Universal Config*/
 :root {
   --backgroundColor: #C2DED1;
@@ -20,25 +23,28 @@
 }
 .App{
   position:fixed;
-  /* overflow-y: scroll; */
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
   scroll-behavior: smooth;
   overflow: auto;
   background-color: var(--backgroundColor);
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
+  height: auto;
   bottom: 0;
   left:0;
   top:0;
 }
 .ProgramHeader{
-  display: grid;
   width: 25rem;
   padding: 0 0.5rem;
+  margin: auto;
+  display: grid;
   grid-template-columns: 2rem 21rem 2rem;
   color: var(--textColour);
   place-items: center;
   align-items: center;
-  margin: auto;
 }
 a {
   text-decoration: none;
@@ -56,19 +62,23 @@ a:hover {
   align-items: center;
   flex-direction: row
 }
+#Content{
+  height: 100%
+}
 #ContentContainer {
+  width: 80%;
+  max-height: 25rem;
   overflow: auto;
   height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
   margin: 0% auto 3%;
   text-align: center;
+  align-items:stretch;
   background-color: var(--divColour);
   padding: 0.4em 1.4em;
   color: var(--textColour);
-  max-height: 25rem;
 }
 
 /* Card Config */
@@ -90,10 +100,10 @@ a:hover {
 }
 /*Header config*/
 #Header{
+  height: 3rem;
   width: 100%;
   display: inline-grid;
   grid-template-columns: 33% 33% 33%;
-  height: 3rem;
   background-color: var(--divColour);
   justify-content: center;
 }
@@ -159,9 +169,8 @@ a:hover {
   justify-content: center;  
   display: flex;
   align-items: center;
-  margin: 0% 0% 1%;
+  margin: 0 0% 1%;
   height: 8rem;
-  flex-direction: row;
 }
 
 
@@ -203,6 +212,7 @@ a:hover {
 }
 .IntroImage img{
   width: 13rem;
+
   border-radius:100%;
 }
 .IntroParagraph{
@@ -220,21 +230,21 @@ a:hover {
 
 /* Program Config */
 .ProjectHeader{
+  margin: 0;
   height: 4rem;
-  /* background-color: white; */
   text-align: center;
-  /* margin: 1%; */
 }
 .programImage{
-  width: 80%;
+  width: 100%;
   margin: 2% 0%;
 }
 .programImage img{
-  width: 90%;
+  width: 85%;
 }
 .programInfo{
-  display: flex;
   flex-direction: row;
+  margin: 0 0 0%;
+  display: flex;
 }
 .programStack {
   width: 50%;
@@ -242,19 +252,15 @@ a:hover {
 }
 .stackList{
   list-style-type: none;
-  margin:0% 0%;
+  padding: 0;
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
 }
-.stackList li{
-  display: flex;
-  justify-content: center;
-  }
 .programDescription{
-  width:auto;
   max-width:50%;
-  text-align: justify;
+  width:auto;
+  text-align: center;
 }
 .programDescription p{
   margin:0% 3% 3%;
@@ -263,7 +269,7 @@ a:hover {
 .Tabs {
   /* width: 80%; */
   height: auto;
-  margin: 0.5rem auto 0rem;
+  margin: 0rem auto 0rem;
   color: var(--textColour);
   border-radius: 2rem;
   @media (max-width: 769px) {
@@ -272,8 +278,8 @@ a:hover {
 }
 ul.nav {
   width: 60%;
-  margin: 0 auto 0.5rem;
   display: flex;
+  margin: 0 auto 1rem;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--textColour);
@@ -285,7 +291,7 @@ ul.nav {
 }
 ul.nav li {
   width: 50%;
-  padding: 0.1rem;
+  padding: 0.3rem;
   list-style: none;
   text-align: center;
   cursor: pointer;
@@ -314,12 +320,210 @@ ul.nav li.active {
 #Footer {
   background-color: var(--divColour);
   color: var(--textColour);
-  position: absolute;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   height: 4rem;
-  /* margin-top: 25px; */
   bottom:0;
   width: 100%;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #Footer {
+    height: 4rem;
+  }
+  #Header {
+    height: 3rem;
+  }
+  .programInfo{
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 3%;
+  }
+  .programStack {
+    width: 100%;
+    text-align: center;
+  }
+  .programDescription{
+    max-width:100%;
+    text-align: center;
+  }
+  .ProgramHeader{
+    width: 18rem;
+    text-align: center;
+    grid-template-columns: 2rem 14rem 2rem;
+    padding: 0 0rem;
+    margin: 0rem auto;
+  }
+  ul.nav {
+    margin: 0 auto 1.5rem;
+  }
+  #ContentContainer {
+    min-height: 15rem;
+    width: 70%;
+    margin: 0% auto 1rem;
+    max-height: 25rem;
+  }
+  .IntroImage{
+    height: 11rem
+  }
+  .IntroImage img{
+    width: 11rem;
+  }
+  .IntroParagraph{
+    padding: 1rem 0% 2rem;
+  }
+  .ProjectHeader{
+    margin: 0.4rem auto;
+  }
+  .siteLink {
+    width: 4rem;
+    height: 4rem;
+    margin: 0% 4%;
+  }
+  .homeLinks{
+    margin: 2rem 0 0;
+  }
+  .card{
+    width: 12rem;
+    height: 18rem;
+  }
+  .cardMedia{
+    height: 8rem;
+  }
+  .cardContent{
+    align-items: center;
+    height: 10rem;
+  }
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #Footer {
+    height: 8rem;
+    /* margin: 0 0 */
+  }
+  #Header {
+    height: 5rem;
+  }
+  .programInfo{
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 3%;
+  }
+  .programStack {
+    width: 100%;
+    text-align: center;
+  }
+  .programDescription{
+    max-width:100%;
+    text-align: center;
+  }
+  .ProgramHeader{
+    width: 25rem;
+    padding: 0 0.5rem;
+    margin: 0.4rem auto;
+  }
+  ul.nav {
+    margin: 0 auto 1.5rem;
+  }
+  #ContentContainer {
+    min-height: 25rem;
+    width: 70%;
+    margin: 0% auto 1rem;
+    max-height: 35rem;
+  }
+  .IntroImage img{
+    width: 20rem;
+  }
+  .IntroParagraph{
+    padding: 1rem 0% 2rem;
+  }
+  .ProjectHeader{
+    margin: 0.8rem auto;
+  }
+  .homeLinks{
+    margin: 0;
+    padding: 0 0;
+    height: 10rem
+  }
+  .card{
+    width: 16rem;
+    height: 21rem;
+  }
+  .cardMedia{
+    height: 10rem;
+  }
+  .cardContent{
+    height: 9rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+  #Footer {
+    height: 10rem;
+    margin: 1rem 0 0
+  }
+  #Header {
+    height: 5rem;
+  }
+  .programInfo{
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 3%;
+  }
+  .programStack {
+    width: 100%;
+    text-align: center;
+  }
+  .programDescription{
+    max-width:100%;
+    text-align: center;
+  }
+  .ProgramHeader{
+    width: 25rem;
+    padding: 0 0.5rem;
+    margin: 1rem auto;
+  }
+  ul.nav {
+    margin: 0 auto 1.5rem;
+  }
+  #ContentContainer {
+    min-height: 35rem;
+    width: 78%;
+    max-height: 45rem;
+  }
+  .IntroImage{
+    height: 23rem
+  }
+  .IntroImage img{
+    width: 23rem;
+  }
+  .IntroParagraph{
+    padding: 1rem 0% 2rem;
+  }
+  .ProjectHeader{
+    margin: 1.4rem auto;
+  }
+  .homeLinks{
+    padding: 0.5rem;
+    height: 11rem
+  }
+  .card{
+    width: 18rem;
+    height: 23rem;
+  }
+  .cardMedia{
+    height: 12rem;
+  }
+  .cardContent{
+    height: 11rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}

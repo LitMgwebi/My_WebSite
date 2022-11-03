@@ -2,10 +2,6 @@ import ProgramTemplate from "../../../Misc/ProgramTemplate";
 
 const Stack = () => {
     return(
-        <div className="programStack">
-            <div className="ProjectHeader">
-                <h4>Stack</h4>
-            </div>
             <ul className="stackList">
                 <li>ReactJS</li>
                 <li>React-pdf</li>
@@ -18,7 +14,6 @@ const Stack = () => {
                 <li>React-pageflip</li>
                 <li>Material-UI</li>
             </ul>
-        </div>
     );
 }
 const MyWebsite = () => {

@@ -3,15 +3,10 @@ import 'swiper/css';
 
 function Stack() {
     return (
-        <div className="programStack">
-            <div className="ProjectHeader">
-                <h4>Stack</h4>
-            </div>
-            <ul className="stackList">
-                <li>Python</li>
-                <li>Text File</li>
-            </ul>
-        </div>
+        <ul className="stackList">
+            <li>Python</li>
+            <li>Text File</li>
+        </ul>
     );
 }
 
