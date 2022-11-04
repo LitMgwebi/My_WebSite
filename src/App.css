@@ -223,8 +223,10 @@ a:hover {
 
 
 /* Certification Config */
-.Certificate{
-  padding: 0% 1%
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  width: 90% !important;
+  height: 100% !important;
 }
 
 
@@ -331,6 +333,11 @@ ul.nav li.active {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  /* .react-pdf__Page__canvas {
+    margin: 0 auto;
+    width: 60% !important;
+    height: 80% !important;
+  } */
   #Footer {
     height: 4rem;
   }
@@ -462,8 +469,25 @@ ul.nav li.active {
   }
 }
 
+/* Small devices on landscape */
+@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
+  #Footer {
+    position: fixed;
+    bottom: 0;
+    height: 2rem;
+    margin: 2rem 0 0
+  }
+  #Content{
+    position: relative;
+    min-height: 100vh;
+  }
+  #Header {
+    height: 3rem;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait){
   #Footer {
     height: 10rem;
     margin: 1rem 0 0
