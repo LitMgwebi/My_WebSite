@@ -1,4 +1,4 @@
-import {Abilities, About, Portfolio} from "../Misc/Links";
+import {Abilities, About, Portfolio, Tutor} from "../Misc/Links";
 import Intro from "./Intro";
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
             <Intro/>
 
             <div className="homeLinks">
-                <Portfolio/><Abilities/><About/>
+                <Portfolio/><Abilities/><About/><Tutor/>
             </div>
         </div>
     );

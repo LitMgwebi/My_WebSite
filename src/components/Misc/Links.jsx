@@ -9,10 +9,11 @@ import about from "../../icons/about.svg";
 import abilities from "../../icons/abilities.svg";
 import portfolio from "../../icons/portfolio.svg";
 import home from "../../icons/home.svg";
+import tutor from "../../icons/tutor.svg"
 import {Link} from "react-router-dom";
 
 //#region Social Links
-function Github() {
+export function Github() {
     return(
         <div className="socialLink">
             <a href="https://github.com/LitMgwebi" target="_blank" rel="noopener noreferrer"> 
@@ -22,7 +23,7 @@ function Github() {
     );
 }
 
-function LinkedIn() {
+export function LinkedIn() {
     return(
         <div className="socialLink">
             <a href="https://www.linkedin.com/in/lithi-mgwebi-a976ba183/" className="socialLink" target="_blank" rel="noopener noreferrer">
@@ -32,7 +33,7 @@ function LinkedIn() {
     );
 }
 
-function Twitter() {
+export function Twitter() {
     return(
         <div className="socialLink">
             <a href="https://twitter.com/CopyNinjaLithi" target="_blank" rel="noopener noreferrer"> 
@@ -42,7 +43,7 @@ function Twitter() {
     );
 }
 
-function Instagram() {
+export function Instagram() {
     return(
         <div className="socialLink">
             <a href="https://www.instagram.com/copyninjalithi/" target="_blank" rel="noopener noreferrer"> 
@@ -52,7 +53,7 @@ function Instagram() {
     )
 }
                     
-function Reddit() {
+export function Reddit() {
     return(
         <div className="socialLink">
             <a href="https://www.reddit.com/user/Lithi_" target="_blank" rel="noopener noreferrer"> 
@@ -62,7 +63,7 @@ function Reddit() {
     )
 }
 
-function Tiktok() {
+export function Tiktok() {
     return(
         <div className="socialLink">
             <a href="https://www.tiktok.com/@lithimgw?lang=en" target="_blank" rel="noopener noreferrer">
@@ -72,7 +73,7 @@ function Tiktok() {
     )
 }
 
-function Dev() {
+export function Dev() {
     return(
         <div className="socialLink">
             <a href="https://dev.to/lit_mgwebi" target="_blank" rel="noopener noreferrer">
@@ -84,7 +85,7 @@ function Dev() {
 //#endregion
 
 //#region Site Links
-function Home(){
+export function Home(){
     return(
         <div className="siteLink">
             <Link 
@@ -100,7 +101,7 @@ function Home(){
     );
 }
 
-function About(){
+export function About(){
     return(
         <div className="siteLink">
             <Link 
@@ -109,14 +110,30 @@ function About(){
             >
                 <img className="siteLogo" src={about} alt="About" />
                 <div className="siteLinkHeader">
-                    <p>About</p>
+                    <p>About Me</p>
                 </div>
             </Link>
         </div>
     );
 }
 
-function Abilities(){
+export function Tutor() {
+    return (
+        <div className="siteLink">
+            <Link
+                to="/tutor"
+                state={"tutor"}
+            >
+                <img className="siteLogo" src={tutor} alt="Tutor" />
+                <div className="siteLinkHeader">
+                    <p>Tutor</p>
+                </div>
+            </Link>
+        </div>
+    );
+}
+
+export function Abilities(){
     return(
         <div className="siteLink">
             <Link 
@@ -132,7 +149,7 @@ function Abilities(){
     );
 }
 
-function Portfolio(){
+export function Portfolio(){
     return(
         <div className="siteLink">
             <Link 
@@ -151,7 +168,7 @@ function Portfolio(){
 //#endregion
 
 //#region Header Links
-function HeaderHome(){
+export function HeaderHome(){
     return(
         <div className="headerLink">
             <Link 
@@ -164,7 +181,7 @@ function HeaderHome(){
     );
 }
 
-function HeaderAbout(){
+export function HeaderAbout(){
     return(
         <div className="headerLink">
             <Link 
@@ -177,7 +194,7 @@ function HeaderAbout(){
     );
 }
 
-function HeaderAbilities(){
+export function HeaderAbilities(){
     return(
         <div className="headerLink">
             <Link 
@@ -190,7 +207,7 @@ function HeaderAbilities(){
     );
 }
 
-function HeaderPortfolio(){
+export function HeaderPortfolio(){
     return(
         <div className="headerLink">
             <Link 
@@ -205,4 +222,4 @@ function HeaderPortfolio(){
 
 //#endregion
 
-export {HeaderAbilities, HeaderAbout, HeaderHome, HeaderPortfolio, Github, LinkedIn, Twitter, Instagram, Reddit, Tiktok, Dev, Home, Abilities, About, Portfolio}
+//export {HeaderAbilities, HeaderAbout, HeaderHome, HeaderPortfolio, Github, LinkedIn, Twitter, Instagram, Reddit, Tiktok, Dev, Home, Abilities, About, Portfolio}
