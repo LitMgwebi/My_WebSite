@@ -1,6 +1,4 @@
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+import { Card, CardContent, CardMedia } from '@material-ui/core';
 import {Link} from "react-router-dom";
 
 function SiteCard({routeLink, state, contentHeader,imgLink, tagLine}) {

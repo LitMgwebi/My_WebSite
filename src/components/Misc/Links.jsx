@@ -10,71 +10,71 @@ import abilities from "../../icons/abilities.svg";
 import portfolio from "../../icons/portfolio.svg";
 import home from "../../icons/home.svg";
 import tutor from "../../icons/tutor.svg"
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //#region Social Links
 export function Github() {
-    return(
+    return (
         <div className="socialLink">
-            <a href="https://github.com/LitMgwebi" target="_blank" rel="noopener noreferrer"> 
-                <img className="logo" src={github} alt="GithubLogo"/> 
+            <a href="https://github.com/LitMgwebi" target="_blank" rel="noopener noreferrer">
+                <img className="logo" src={github} alt="GithubLogo" />
             </a>
         </div>
     );
 }
 
 export function LinkedIn() {
-    return(
+    return (
         <div className="socialLink">
             <a href="https://www.linkedin.com/in/lithi-mgwebi-a976ba183/" className="socialLink" target="_blank" rel="noopener noreferrer">
-                <img className="logo" src={linkedin} alt="LinkedInLogo"/> 
+                <img className="logo" src={linkedin} alt="LinkedInLogo" />
             </a>
         </div>
     );
 }
 
 export function Twitter() {
-    return(
+    return (
         <div className="socialLink">
-            <a href="https://twitter.com/CopyNinjaLithi" target="_blank" rel="noopener noreferrer"> 
-                <img className="logo" src={twitter} alt="TwitterLogo"/>
+            <a href="https://twitter.com/CopyNinjaLithi" target="_blank" rel="noopener noreferrer">
+                <img className="logo" src={twitter} alt="TwitterLogo" />
             </a>
         </div>
     );
 }
 
 export function Instagram() {
-    return(
+    return (
         <div className="socialLink">
-            <a href="https://www.instagram.com/copyninjalithi/" target="_blank" rel="noopener noreferrer"> 
-                <img className="logo" src={instagram} alt="InstagramLogo"/>
+            <a href="https://www.instagram.com/copyninjalithi/" target="_blank" rel="noopener noreferrer">
+                <img className="logo" src={instagram} alt="InstagramLogo" />
             </a>
         </div>
     )
 }
-                    
+
 export function Reddit() {
-    return(
+    return (
         <div className="socialLink">
-            <a href="https://www.reddit.com/user/Lithi_" target="_blank" rel="noopener noreferrer"> 
-                <img className="logo" src={reddit} alt="RedditLogo"/> 
+            <a href="https://www.reddit.com/user/Lithi_" target="_blank" rel="noopener noreferrer">
+                <img className="logo" src={reddit} alt="RedditLogo" />
             </a>
         </div>
     )
 }
 
 export function Tiktok() {
-    return(
+    return (
         <div className="socialLink">
             <a href="https://www.tiktok.com/@lithimgw?lang=en" target="_blank" rel="noopener noreferrer">
-                <img className="logo" src={tiktok} alt="TikTokLogo"/> 
+                <img className="logo" src={tiktok} alt="TikTokLogo" />
             </a>
         </div>
     )
 }
 
 export function Dev() {
-    return(
+    return (
         <div className="socialLink">
             <a href="https://dev.to/lit_mgwebi" target="_blank" rel="noopener noreferrer">
                 <img className="logo" src={dev} alt="DEVLogo" />
@@ -85,28 +85,28 @@ export function Dev() {
 //#endregion
 
 //#region Site Links
-export function Home(){
-    return(
+export function Home() {
+    return (
         <div className="siteLink">
-            <Link 
+            <Link
                 to="/"
                 state="home"
             >
                 <img className="siteLogo" src={home} alt="Home" />
                 <div className="siteLinkHeader">
-                   <p>Home</p>
+                    <p>Home</p>
                 </div>
             </Link>
         </div>
     );
 }
 
-export function About(){
-    return(
+export function About() {
+    return (
         <div className="siteLink">
-            <Link 
+            <Link
                 to="/about"
-                state={"about"}    
+                state={"about"}
             >
                 <img className="siteLogo" src={about} alt="About" />
                 <div className="siteLinkHeader">
@@ -133,10 +133,10 @@ export function Tutor() {
     );
 }
 
-export function Abilities(){
-    return(
+export function Abilities() {
+    return (
         <div className="siteLink">
-            <Link 
+            <Link
                 to="/abilities"
                 state={"abilities"}
             >
@@ -149,10 +149,10 @@ export function Abilities(){
     );
 }
 
-export function Portfolio(){
-    return(
+export function Portfolio() {
+    return (
         <div className="siteLink">
-            <Link 
+            <Link
                 to="/portfolio"
                 state={"portfolio"}
             >
@@ -168,10 +168,10 @@ export function Portfolio(){
 //#endregion
 
 //#region Header Links
-export function HeaderHome(){
-    return(
+export function HeaderHome() {
+    return (
         <div className="headerLink">
-            <Link 
+            <Link
                 to="/"
                 state="home"
             >
@@ -181,12 +181,12 @@ export function HeaderHome(){
     );
 }
 
-export function HeaderAbout(){
-    return(
+export function HeaderAbout() {
+    return (
         <div className="headerLink">
-            <Link 
+            <Link
                 to="/about"
-                state={"about"}    
+                state={"about"}
             >
                 <img className="headerLogo" src={about} alt="About" />
             </Link>
@@ -194,10 +194,10 @@ export function HeaderAbout(){
     );
 }
 
-export function HeaderAbilities(){
-    return(
+export function HeaderAbilities() {
+    return (
         <div className="headerLink">
-            <Link 
+            <Link
                 to="/abilities"
                 state={"abilities"}
             >
@@ -207,10 +207,10 @@ export function HeaderAbilities(){
     );
 }
 
-export function HeaderPortfolio(){
-    return(
+export function HeaderPortfolio() {
+    return (
         <div className="headerLink">
-            <Link 
+            <Link
                 to="/portfolio"
                 state={"portfolio"}
             >
@@ -220,6 +220,16 @@ export function HeaderPortfolio(){
     );
 }
 
+export function HeaderTutor() {
+    return (
+        <div className="headerLink">
+            <Link
+                to="/tutor"
+                state={"tutor"}
+            >
+                <img className="headerLogo" src={tutor} alt="Tutor" />
+            </Link>
+        </div>
+    );
+}
 //#endregion
-
-//export {HeaderAbilities, HeaderAbout, HeaderHome, HeaderPortfolio, Github, LinkedIn, Twitter, Instagram, Reddit, Tiktok, Dev, Home, Abilities, About, Portfolio}

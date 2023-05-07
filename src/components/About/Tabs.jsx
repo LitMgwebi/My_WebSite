@@ -8,7 +8,7 @@ function Tabs() {
         setActiveTab("profile");
     };
     const handleTab2 = () => {
-        setActiveTab("eduction");
+        setActiveTab("education");
     };
     return (
         <div className="Tabs">

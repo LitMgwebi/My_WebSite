@@ -3,9 +3,8 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Abilities",
-    "\\src\\components\\About"
+    "\\src\\components\\Tutor"
   ],
-  "SelectedNode": "\\src\\components\\Abilities",
+  "SelectedNode": "\\src\\components\\Tutor\\Tutor.jsx",
   "PreviewInSolutionExplorer": false
 }
