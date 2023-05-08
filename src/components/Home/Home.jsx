@@ -5,13 +5,10 @@ function Home() {
     return(
         <div id="Home">
             <div className="ProjectHeader">
-                <h1>Welcome</h1>
+                <h1>Lithi Mgwebi</h1>
             </div>
             <Intro/>
 
-            <div className="homeLinks">
-                <Portfolio/><Abilities/><About/><Tutor/>
-            </div>
         </div>
     );
 }

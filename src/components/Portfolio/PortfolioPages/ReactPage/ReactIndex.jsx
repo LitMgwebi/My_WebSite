@@ -4,7 +4,7 @@ import SiteCard from '../../../Misc/SiteCard';
 function ReactIndex() {
     return(
         <div id="ReactIndex">
-            <ProjectHeader header="React" buttonNeeded="portfolio"/>
+            <ProjectHeader header="React" buttonNeeded="back"/>
             <div id="ContentContainer">
                 <SiteCard 
                     routeLink="/portfolio/react/mywebsite" 

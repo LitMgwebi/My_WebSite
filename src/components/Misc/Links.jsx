@@ -11,6 +11,7 @@ import portfolio from "../../icons/portfolio.svg";
 import home from "../../icons/home.svg";
 import tutor from "../../icons/tutor.svg"
 import { Link } from "react-router-dom";
+import back from "../../icons/back.svg";
 
 //#region Social Links
 export function Github() {
@@ -160,6 +161,19 @@ export function Portfolio() {
                 <div className="siteLinkHeader">
                     <p>Portfolio</p>
                 </div>
+            </Link>
+        </div>
+    );
+}
+
+export function Back({link }) {
+    return (
+        <div className="programButton">
+            <Link
+                to={link}
+                state={"portfolio"}
+            >
+                <img className="logo" src={back} alt="Back" />
             </Link>
         </div>
     );

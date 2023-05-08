@@ -1,34 +1,25 @@
-import {Link} from "react-router-dom";
 import github from "../../icons/github.svg";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import {Swiper, SwiperSlide} from "swiper/react";
-import back from "../../icons/back.svg";
+import { EffectCoverflow, Pagination} from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Back } from "./Links"
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
-const ProgramTemplate = ({link, title, githubLink, description, programStack, firstImage, secondImage, thirdImage}) => {
-    return(
+const ProgramTemplate = ({ link, title, githubLink, description, programStack, images }) => {
+    return (
         <div>
             <div className="ProgramHeader">
-                <div className="programButton">
-                    <Link
-                        to={link} 
-                        state={"portfolio"}
-                    >
-                        <img className="logo" src={back} alt="Back" />
-                    </Link>
-                </div>
+                <Back link={link} />
                 <h1>{title}</h1>
                 <div className="programLink">
-                    <a href={githubLink} target="_blank" rel="noopener noreferrer"> 
-                        <img className="logo" src={github} alt="GithubLogo"/> 
+                    <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                        <img className="logo" src={github} alt="GithubLogo" />
                     </a>
                 </div>
             </div>
-            <article id="ContentContainer">               
+            <article id="ContentContainer">
                 <div className="programInfo">
                     <div className="programDescription">
                         <div>
@@ -45,25 +36,35 @@ const ProgramTemplate = ({link, title, githubLink, description, programStack, fi
                 </div>
                 <div className="programImage">
                     <Swiper
-                        modules={[Navigation, A11y, Pagination, Scrollbar]}
-                        spaceBetween={50}
-                        slidesPerView={1}
-                        navigation
-                        pagination={{clickable: true}}
-                        scrollbar={{draggable: true}}
+                        effect={"coverflow"}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView={"auto"}
+                        coverflowEffect={{
+                            rotate: 50,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: true,
+                        }}
+                        pagination={true}
+                        modules={[EffectCoverflow, Pagination]}
+                        className="mySwiper"
                     >
-                        <SwiperSlide>
-                            {firstImage}
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            {secondImage}
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            {thirdImage}
-                        </SwiperSlide>
-                    
+                        {
+                            images != null ?
+                                images.length > 0 ?
+                                    images.map(image => (
+                                        <SwiperSlide className="swiperSlide">
+                                            {image}
+                                        </SwiperSlide>
+                                    ))
+                                    : <></>
+                                : <></>
+                        }
+
                     </Swiper>
-                </div>          
+                </div>
             </article>
         </div>
     )

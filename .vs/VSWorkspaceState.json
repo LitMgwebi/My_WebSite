@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\components",
-    "\\src\\components\\Tutor"
+    "\\src\\components"
   ],
-  "SelectedNode": "\\src\\components\\Tutor\\Tutor.jsx",
+  "SelectedNode": "\\src\\components\\Misc\\Links.jsx",
   "PreviewInSolutionExplorer": false
 }

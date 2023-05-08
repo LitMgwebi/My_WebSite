@@ -25,9 +25,7 @@ const MyWebsite = () => {
                 githubLink="https://github.com/LitMgwebi/My_WebSite"
                 description="This program is my portfolio site that you are currently on. It is the hub where all of my social media sites will converge. This site is also a means I will use to showcase my current and future github projects. From this centralized website, people will be able to view all of my github projects, get means of which to contact me, and get linked to all of social media."
                 programStack={<Stack/>}
-                firstImage={<img src={require("../../../../media/Cards/MyWebsite/Homepage.png")} alt="homepage"/>}
-                secondImage={<img src={require("../../../../media/Cards/MyWebsite/portfolio.png")} alt="portfolio"/>}
-                thirdImage={<img src={require("../../../../media/Cards/MyWebsite/abilities.png")} alt="abilities"/>}
+                images={[<img src={require("../../../../media/Cards/MyWebsite/Homepage.png")} alt="homepage"/>, <img src={require("../../../../media/Cards/MyWebsite/portfolio.png")} alt="portfolio"/>, <img src={require("../../../../media/Cards/MyWebsite/abilities.png")} alt="abilities"/>]}
             />
         </div>
     );

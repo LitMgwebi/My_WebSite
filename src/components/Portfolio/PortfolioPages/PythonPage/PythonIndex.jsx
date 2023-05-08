@@ -4,7 +4,7 @@ import SiteCard from "../../../Misc/SiteCard";
 function PythonIndex(){
     return(
         <div id="PythonIndex">
-            <ProjectHeader header="Python" buttonNeeded="portfolio"/>
+            <ProjectHeader header="Python" buttonNeeded="back"/>
             <div id="ContentContainer">
                 <SiteCard 
                     routeLink="/portfolio/python/simpleCalculator" 

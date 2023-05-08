@@ -2,7 +2,8 @@
 :root {
     --backgroundColor: #C2DED1;
     --divColour: #ECE5C7;
-    --logoColor: invert(78%) sepia(6%) saturate(740%) hue-rotate(360deg) brightness(102%) contrast(87%);
+    /* https://isotropic.co/tool/hex-color-to-css-filter/ for logo color*/
+    --logoColor: invert(85%) sepia(12%) saturate(341%) hue-rotate(0deg) brightness(90%) contrast(91%);
     --cardColor: #CDC2AE;
     --textColour: #354259;
 }
@@ -10,7 +11,7 @@
 [data-theme='dark'] {
     --backgroundColor: #2C3333;
     --divColour: #395B64;
-    --logoColor: invert(44%) sepia(97%) saturate(705%) hue-rotate(335deg) brightness(85%) contrast(97%);
+    --logoColor: filter: invert(88%) sepia(34%) saturate(184%) hue-rotate(130deg) brightness(87%) contrast(82%);
     --cardColor: #A5C9CA;
     --textColour: #E7F6F2;
 }
@@ -76,11 +77,9 @@ a:hover {
 }
 
 #ContentContainer {
-    width: 80%;
-    max-height: 23rem;
-    min-height: 20rem;
-    overflow: auto;
-    height: auto;
+    width: auto;
+    max-height: 25rem;
+    overflow:auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -95,14 +94,23 @@ a:hover {
 
 /* Card Config */
 .card {
-    width: 15rem;
-    height: 20rem;
+    width: 14rem;
+    height: 18rem;
     margin: 3%;
 }
 
 .cardMedia {
-    height: 10rem
+    height: 45%
 }
+
+.cardContent {
+    height: 55%;
+    background-color: var(--cardColor);
+}
+
+.cardContent:hover {
+        background-color: var(--divColour);
+    }
 
 .tutorCard {
     width: 11rem;
@@ -156,15 +164,6 @@ a:hover {
 .tutorCardContent {
         height: 14rem;
         background-color: var(--cardColor);
-    }
-
-.cardContent {
-    height: 10rem;
-    background-color: var(--cardColor);
-}
-
-.cardContent:hover {
-        background-color: var(--divColour);
     }
 
 
@@ -329,17 +328,16 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6rem;
+    width: 5rem;
     height: 6rem;
-    margin: 0% 2%;
+    margin: 0% 10%;
 }
 
 .homeLinks {
     justify-content: center;
     display: flex;
     align-items: center;
-    margin: 0 0% 1%;
-    height: 8rem;
+    margin: 2% 0% ;
 }
 
 
@@ -404,6 +402,11 @@ a:hover {
 }
 
 
+/* Swiper */
+.mySwiper{
+    width: 65%;
+}
+
 /* Program Config */
 .ProjectHeader {
     margin: 0;
@@ -452,7 +455,7 @@ a:hover {
 .Tabs {
     /* width: 80%; */
     height: auto;
-    margin: 0rem auto 0rem;
+    margin: 0rem auto 0;
     color: var(--textColour);
     border-radius: 2rem;
 

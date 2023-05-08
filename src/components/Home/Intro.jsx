@@ -1,3 +1,5 @@
+import { Abilities, About, Portfolio, Tutor } from "../Misc/Links";
+
 const Intro = () => {
     return (
         <div id="ContentContainer">
@@ -7,8 +9,12 @@ const Intro = () => {
                     alt="Lithi" 
                 />
             </div>
-            <div className="IntroParagraph">
+            {/*<div className="IntroParagraph">
                 <p>Hi, my name is Lithi Mgwebi. I am a freelance web developer</p>      
+            </div>*/}
+
+            <div className="homeLinks">
+                <Portfolio /><Abilities /><About /><Tutor />
             </div>
         </div>
     );
