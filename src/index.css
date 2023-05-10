@@ -78,7 +78,7 @@ a:hover {
 
 #ContentContainer {
     width: auto;
-    max-height: 25rem;
+    max-height: 24.5rem;
     overflow:auto;
     display: flex;
     justify-content: center;
@@ -100,11 +100,11 @@ a:hover {
 }
 
 .cardMedia {
-    height: 45%
+    height: 65%
 }
 
 .cardContent {
-    height: 55%;
+    height: 35%;
     background-color: var(--cardColor);
 }
 
@@ -137,6 +137,7 @@ a:hover {
 .tutorButton button {
     width: 5rem;
     height: 2.5rem;
+    margin: 1rem
 }
 
 .tutorCards{
@@ -147,7 +148,7 @@ a:hover {
 }
 
 .cardQuestion{
-    height: 60%
+    height: 50%
 }
 
 .tutorCardActions{
@@ -162,7 +163,7 @@ a:hover {
 }
 
 .tutorCardContent {
-        height: 14rem;
+        height: 100%;
         background-color: var(--cardColor);
     }
 
@@ -233,7 +234,7 @@ a:hover {
 
 /* Accordion */
 #Accordion {
-    width: 100%;
+    width: 90%;
 }
 
 #Accordion * {
@@ -526,11 +527,11 @@ ul.nav li.active {
     height: 80% !important;
   } */
     #Footer {
-        height: 4rem;
+        height: 5rem;
     }
 
     #Header {
-        height: 3rem;
+        height: 4rem;
     }
 
     .programInfo {
@@ -557,28 +558,20 @@ ul.nav li.active {
         margin: 0rem auto;
     }
 
-    ul.nav {
-        margin: 0 auto 1.5rem;
-    }
-
     #ContentContainer {
-        min-height: 15rem;
-        width: 70%;
-        margin: 0% auto 1rem;
-        max-height: 25rem;
+        height: 25rem;
+        width: 100%;
+        padding: 0
     }
 
     .IntroImage {
-        height: 11rem
+        width: 100%;
+        height: 50%;
     }
 
-        .IntroImage img {
-            width: 11rem;
+    .IntroImage img {
+            width: 55%;
         }
-
-    .IntroParagraph {
-        padding: 1rem 0% 2rem;
-    }
 
     .ProjectHeader {
         margin: 0.4rem auto;
@@ -591,21 +584,44 @@ ul.nav li.active {
     }
 
     .homeLinks {
-        margin: 2rem 0 0;
+        height: 45%;
+        width: 100%;
     }
 
     .card {
-        width: 12rem;
-        height: 18rem;
+        width: 11rem;
+        height: 16rem;
     }
 
     .cardMedia {
-        height: 8rem;
+        height: 60%
     }
 
     .cardContent {
-        align-items: center;
-        height: 10rem;
+        height: 40%;
+    }
+
+    .tutorCard {
+        width: 9rem;
+        height: 13rem;
+        margin: 5%;
+    }
+
+    .popupCard {
+        max-width: 11rem;
+    }
+
+    .box {
+        width: 75%;
+        height: 55%;
+    }
+
+    #About{
+        margin: 1.5%;
+    }
+
+    #Accordion {
+        width: 95%;
     }
 }
 

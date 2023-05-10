@@ -18,7 +18,6 @@ function SiteCard({routeLink, state, contentHeader,imgLink, tagLine}) {
                 />
                 <CardContent className='cardContent'>
                     <h3 className="cardHeader">{contentHeader}</h3>
-                    <p className="cardTagLine">{tagLine}</p>
                 </CardContent>
                 
             </Link>

@@ -19,7 +19,7 @@ function Tutor() {
                     />
                     <TutorCard
                         contentHeader="When?"
-                        tagLine="When will be able to have tutoring sessions?"
+                        tagLine="When are the sessions?"
                         question="When?"
                     />
                     {/*<TutorCard
