@@ -18,7 +18,7 @@ const Stack = () => {
 }
 const MyWebsite = () => {
     return (
-        <div id="MyWebsite">
+        <div id="Index">
             <ProgramTemplate
                 link="/portfolio/react"
                 title="My Website"

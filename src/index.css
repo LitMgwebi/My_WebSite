@@ -27,7 +27,7 @@ body {
     overflow: auto;
     background-color: var(--backgroundColor);
     height: 100vh;
-    width:100%;
+    width: 100%;
 }
 
 code {
@@ -57,7 +57,7 @@ a {
     color: var(--textColour);
 }
 
-a:hover {
+    a:hover {
         text-decoration: underline;
     }
 
@@ -85,7 +85,7 @@ a:hover {
     width: 95%;
     height: auto;
     max-height: 25rem;
-    overflow:auto;
+    overflow: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -114,7 +114,7 @@ a:hover {
     background-color: var(--cardColor);
 }
 
-.cardContent:hover {
+    .cardContent:hover {
         background-color: var(--divColour);
     }
 
@@ -146,50 +146,50 @@ a:hover {
     margin: 1rem
 }
 
-.tutorCards{
+.tutorCards {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center
 }
 
-.cardQuestion{
+.cardQuestion {
     height: 50%
 }
 
-.tutorCardActions{
+.tutorCardActions {
     height: 30%;
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
-.tutorCardActions button {
-    width: 4rem;
-    height: 1.5rem;
-}
+    .tutorCardActions button {
+        width: 4rem;
+        height: 1.5rem;
+    }
 
 .tutorCardContent {
-        height: 100%;
-        background-color: var(--cardColor);
-    }
+    height: 100%;
+    background-color: var(--cardColor);
+}
 
 
 /* Tutor style */
-.tutorButton button{
+.tutorButton button {
     background-color: var(--backgroundColor)
 }
 
-.tutorButton button:hover {
-    background-color: var(--textColour)
-}
+    .tutorButton button:hover {
+        background-color: var(--textColour)
+    }
 
-.tutorCardActions button, .popupButton button{
+.tutorCardActions button, .popupButton button {
     background-color: var(--divColour)
 }
 
-.tutorCardActions button:hover, popupButton button:hover {
-    background-color: var(--cardColor)
-}
+    .tutorCardActions button:hover, popupButton button:hover {
+        background-color: var(--cardColor)
+    }
 
 .popup-box {
     position: fixed;
@@ -216,11 +216,11 @@ a:hover {
     color: var(--textColour)
 }
 
-.box h3{
-    height: 10%
-}
+    .box h3 {
+        height: 10%
+    }
 
-.paragraph{
+.paragraph {
     display: flex;
     flex-flow: row wrap;
     overflow-y: scroll;
@@ -230,11 +230,11 @@ a:hover {
     width: 100%;
 }
 
-.popupButton{
+.popupButton {
     height: 20%;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 
@@ -243,7 +243,7 @@ a:hover {
     width: 90%;
 }
 
-#Accordion * {
+    #Accordion * {
         background-color: var(--cardColor);
     }
 
@@ -277,7 +277,7 @@ a:hover {
     align-items: center;
 }
 
-.headerName a {
+    .headerName a {
         color: var(--textColour);
     }
 
@@ -308,7 +308,7 @@ a:hover {
     height: 1.4rem;
 }
 
-.headerLogo:hover {
+    .headerLogo:hover {
         width: 1.55rem;
         height: 1.55rem;
     }
@@ -320,7 +320,7 @@ a:hover {
     height: 5rem;
 }
 
-.siteLogo:hover {
+    .siteLogo:hover {
         width: 5.2rem;
         height: 5.2rem;
         z-index: 50;
@@ -344,7 +344,7 @@ a:hover {
     justify-content: center;
     display: flex;
     align-items: center;
-    margin: 2% 0% ;
+    margin: 2% 0%;
 }
 
 
@@ -355,7 +355,7 @@ a:hover {
     height: 1.35rem;
 }
 
-.logo:hover {
+    .logo:hover {
         width: 1.5rem;
         height: 1.5rem;
         z-index: 50;
@@ -389,7 +389,7 @@ a:hover {
     justify-content: center;
 }
 
-.IntroImage img {
+    .IntroImage img {
         width: 13rem;
         border-radius: 100%;
     }
@@ -404,7 +404,7 @@ a:hover {
 
 
 /* Swiper */
-.mySwiper{
+.mySwiper {
     width: 65%;
 }
 
@@ -420,7 +420,7 @@ a:hover {
     margin: 2% 0%;
 }
 
-.programImage img {
+    .programImage img {
         width: 85%;
     }
 
@@ -449,7 +449,7 @@ a:hover {
     text-align: center;
 }
 
-.programDescription p {
+    .programDescription p {
         margin: 0% 3% 3%;
     }
 
@@ -468,7 +468,7 @@ ul.nav {
     }
 }
 
-ul.nav li {
+    ul.nav li {
         width: 50%;
         padding: 0.3rem;
         list-style: none;
@@ -479,17 +479,17 @@ ul.nav li {
         border-top-left-radius: 2rem;
     }
 
-ul.nav li:nth-child(2) {
+        ul.nav li:nth-child(2) {
             border-radius: 0;
             border-bottom-right-radius: 2rem;
             border-top-right-radius: 2rem;
         }
 
-ul.nav li:hover {
+        ul.nav li:hover {
             background: var(--divColour);
         }
 
-ul.nav li.active {
+        ul.nav li.active {
             background: var(--cardColor);
         }
 
@@ -511,12 +511,18 @@ ul.nav li.active {
 @media only screen and (max-width: 600px) {
     #Footer {
         height: 5rem;
+        position: sticky;
+        bottom: 0;
     }
 
     #Header {
         height: 4rem;
     }
 
+
+    #Index {
+        justify-content: flex-start;
+    }
     .programInfo {
         flex-direction: column;
         text-align: center;
@@ -538,7 +544,7 @@ ul.nav li.active {
         text-align: center;
         grid-template-columns: 2rem 14rem 2rem;
         padding: 0 0rem;
-        margin: 0rem auto;
+        margin: 1.5rem auto;
     }
 
     #ContentContainer {
@@ -554,7 +560,7 @@ ul.nav li.active {
     }
 
     .ProjectHeader {
-        margin: 0.4rem auto;
+        margin: 1.5rem auto;
     }
 
     #Accordion {
@@ -570,8 +576,7 @@ ul.nav li.active {
     .homeLinks {
         height: 40%;
         width: 100%;
-        background-color: lavender;
-        margin:  0%;
+        margin: 0%;
     }
 
     .card {
@@ -602,10 +607,9 @@ ul.nav li.active {
         height: 55%;
     }
 
-    #About{
+    #About {
         margin: 1.5%;
     }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -617,6 +621,7 @@ ul.nav li.active {
     #Index {
         justify-content: flex-start;
     }
+
     #Header {
         height: 5rem;
     }
@@ -704,14 +709,13 @@ ul.nav li.active {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+@media only screen and (min-width: 770px) and (max-width: 992px) and (orientation: portrait) {
     #Footer {
-        height: 10rem;
-        margin: 1rem 0 0
+        height: 7rem;
     }
 
     #Header {
-        height: 5rem;
+        height: 7rem;
     }
 
     .programInfo {
@@ -733,24 +737,27 @@ ul.nav li.active {
     .ProgramHeader {
         width: 25rem;
         padding: 0 0.5rem;
-        margin: 1rem auto;
+        margin: 4rem auto;
     }
 
     ul.nav {
         margin: 0 auto 1.5rem;
+        width: 90%;
     }
 
     #ContentContainer {
+        max-height: 40rem;
+        margin: 0%;
+        padding: 0;
+        padding: 1em 1em;
         min-height: 35rem;
-        width: 78%;
-        max-height: 45rem;
     }
 
     .IntroImage {
         height: 23rem
     }
 
-        .IntroImage img {
+    .IntroImage img {
             width: 23rem;
         }
 
@@ -759,7 +766,7 @@ ul.nav li.active {
     }
 
     .ProjectHeader {
-        margin: 1.4rem auto;
+        margin: 4rem auto;
     }
 
     .homeLinks {
@@ -768,8 +775,8 @@ ul.nav li.active {
     }
 
     .card {
-        width: 18rem;
-        height: 23rem;
+        width: 16rem;
+        height: 20rem;
     }
 
     .cardMedia {
@@ -778,6 +785,13 @@ ul.nav li.active {
 
     .cardContent {
         height: 11rem;
+    }
+    #Accordion {
+        width: 100%;
+    }
+    .accordion {
+        width: 100%;
+        margin: 2rem 0;
     }
 }
 

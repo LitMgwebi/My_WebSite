@@ -12,7 +12,7 @@ function Stack() {
 
 function SimpleCalculator() {
     return(
-        <div id="SimpleCalculator">
+        <div id="Index">
             <ProgramTemplate
                 link="/portfolio/python"
                 title="Simple Calculator"

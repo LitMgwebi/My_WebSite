@@ -15,7 +15,7 @@ function Stack(){
 }
 function ArtBlog() {
     return (
-        <div>
+        <div id="Index">
             <ProgramTemplate
                 link="/portfolio/mern"
                 title="ArtBlog"
