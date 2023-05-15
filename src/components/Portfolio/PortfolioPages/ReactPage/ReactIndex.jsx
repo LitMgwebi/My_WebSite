@@ -3,7 +3,7 @@ import SiteCard from '../../../Misc/SiteCard';
 
 function ReactIndex() {
     return(
-        <div id="ReactIndex">
+        <div id="Index">
             <ProjectHeader header="React" buttonNeeded="back"/>
             <div id="ContentContainer">
                 <SiteCard 

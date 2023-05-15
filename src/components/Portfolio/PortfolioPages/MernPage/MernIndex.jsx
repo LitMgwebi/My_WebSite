@@ -3,7 +3,7 @@ import ProjectHeader from "../../../Misc/ProjectHeader";
 
 function MernIndex() {
     return(
-        <div id="MernIndex">
+        <div id="Index">
             <ProjectHeader header="M.E.R.N Projects"/>
             <div id="ContentContainer">
                 <SiteCard 

@@ -609,12 +609,14 @@ ul.nav li.active {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 770px) and (orientation: portrait) {
     #Footer {
-        height: 8rem;
-        /* margin: 0 0 */
+        height: 6rem;
     }
 
+    #Index {
+        justify-content: flex-start;
+    }
     #Header {
         height: 5rem;
     }
@@ -637,8 +639,7 @@ ul.nav li.active {
 
     .ProgramHeader {
         width: 25rem;
-        padding: 0 0.5rem;
-        margin: 0.4rem auto;
+        margin: 1.5rem auto;
     }
 
     ul.nav {
@@ -646,9 +647,8 @@ ul.nav li.active {
     }
 
     #ContentContainer {
-        min-height: 25rem;
-        width: 70%;
-        margin: 0% auto 1rem;
+        min-height: 32rem;
+        margin: 0% auto 0;
         max-height: 35rem;
     }
 

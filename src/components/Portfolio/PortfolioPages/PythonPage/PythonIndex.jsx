@@ -3,7 +3,7 @@ import SiteCard from "../../../Misc/SiteCard";
 
 function PythonIndex(){
     return(
-        <div id="PythonIndex">
+        <div id="Index">
             <ProjectHeader header="Python" buttonNeeded="back"/>
             <div id="ContentContainer">
                 <SiteCard 
