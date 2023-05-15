@@ -11,7 +11,7 @@ function Tabs() {
         setActiveTab("education");
     };
     return (
-        <div className="Tabs">
+        <div id="ContentContainer">
             <ul className="nav">
                 <li
                     className={activeTab === "profile" ? "active" : ""}

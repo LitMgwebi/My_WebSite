@@ -3,7 +3,7 @@ import TutorCard from "../Misc/TutorCard";
 
 function Tutor() {
     return (
-        <div id="Tutor">
+        <div id="Index">
             <ProjectHeader header="Tutor" buttonNeeded="home" />
             <div id="ContentContainer">
                 <div className="tutorCards">

@@ -11,7 +11,7 @@ const Tabs = () => {
         setActiveTab("skills");
     };
     return (
-        <div className="Tabs">
+        <div id="ContentContainer">
             <ul className="nav">
                 <li
                     className={activeTab === "certifications" ? "active" : ""}

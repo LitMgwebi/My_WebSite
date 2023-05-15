@@ -3,7 +3,7 @@ import ProjectHeader from "../Misc/ProjectHeader";
 
 function About() {
     return (
-        <div id="About">
+        <div id="Index">
             <ProjectHeader header="About Me" buttonNeeded="home" />
             <Tabs/>
         </div>

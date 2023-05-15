@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\components",
-    "\\src\\components\\About"
+    "\\src"
   ],
-  "SelectedNode": "\\src\\components\\About\\Education.jsx",
+  "SelectedNode": "\\src\\App.jsx",
   "PreviewInSolutionExplorer": false
 }

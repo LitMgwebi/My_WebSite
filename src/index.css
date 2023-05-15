@@ -20,6 +20,14 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow: auto;
+    background-color: var(--backgroundColor);
+    height: 100vh;
+    width:100%;
 }
 
 code {
@@ -28,18 +36,9 @@ code {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .App {
-    position:absolute;
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    overflow: auto;
-    background-color: var(--backgroundColor);
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    top: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .ProgramHeader {
@@ -72,18 +71,25 @@ a:hover {
     flex-direction: row
 }
 
-#Content {
-    height: 100vh;
+#Index {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0%;
 }
 
 #ContentContainer {
-    width: auto;
-    max-height: 24.5rem;
+    width: 95%;
+    height: auto;
+    max-height: 25rem;
     overflow:auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0% auto 2%;
+    margin: auto;
     text-align: center;
     align-items: stretch;
     background-color: var(--divColour);
@@ -388,12 +394,6 @@ a:hover {
         border-radius: 100%;
     }
 
-.IntroParagraph {
-    padding: 0% 0% 1rem;
-    text-align: center;
-    color: var(--textColour);
-}
-
 
 /* Certification Config */
 .react-pdf__Page__canvas {
@@ -453,18 +453,6 @@ a:hover {
         margin: 0% 3% 3%;
     }
 
-.Tabs {
-    /* width: 80%; */
-    height: auto;
-    margin: 0rem auto 0;
-    color: var(--textColour);
-    border-radius: 2rem;
-
-    @media (max-width: 769px) {
-        padding: 1rem 0;
-    }
-}
-
 ul.nav {
     width: 60%;
     display: flex;
@@ -510,22 +498,17 @@ ul.nav li.active {
 #Footer {
     background-color: var(--divColour);
     color: var(--textColour);
-    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 4rem;
     bottom: 0;
+    margin-top: 1rem;
     width: 100%;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* .react-pdf__Page__canvas {
-    margin: 0 auto;
-    width: 60% !important;
-    height: 80% !important;
-  } */
     #Footer {
         height: 5rem;
     }
@@ -559,9 +542,10 @@ ul.nav li.active {
     }
 
     #ContentContainer {
-        height: 25rem;
-        width: 100%;
-        padding: 0
+        height: 27rem;
+        margin: 0%;
+        padding: 0;
+        padding: 0.4em 0.4em;
     }
 
     .IntroImage {
@@ -569,12 +553,12 @@ ul.nav li.active {
         height: 50%;
     }
 
-    .IntroImage img {
-            width: 55%;
-        }
-
     .ProjectHeader {
         margin: 0.4rem auto;
+    }
+
+    #Accordion {
+        width: 100%;
     }
 
     .siteLink {
@@ -584,8 +568,10 @@ ul.nav li.active {
     }
 
     .homeLinks {
-        height: 45%;
+        height: 40%;
         width: 100%;
+        background-color: lavender;
+        margin:  0%;
     }
 
     .card {
@@ -620,9 +606,6 @@ ul.nav li.active {
         margin: 1.5%;
     }
 
-    #Accordion {
-        width: 95%;
-    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

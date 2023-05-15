@@ -35,24 +35,22 @@ function App() {
     }
     return (
         <div className="App" data-theme={theme}>
-            <div id="Content">
-                <Router>
-                    <Header theme={switchTheme} imgIcon={theme} />
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/portfolio" element={<Portfolio />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/tutor" element={<Tutor />} />
-                        <Route path="/abilities" element={<Abilities />} />
-                        <Route path="/portfolio/react" element={<ReactIndex />} />
-                        <Route path="/portfolio/python" element={<PythonIndex />} />
-                        <Route path="/portfolio/mern" element={<MernIndex />} />
-                        <Route path="/portfolio/python/simpleCalculator" element={<SimpleCalculator />} />
-                        <Route path="/portfolio/mern/artblog" element={<ArtBlog />} />
-                        <Route path="/portfolio/react/mywebsite" element={<MyWebsite />} />
-                    </Routes>
-                </Router>
-            </div>
+            <Router>
+                <Header theme={switchTheme} imgIcon={theme} />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/tutor" element={<Tutor />} />
+                    <Route path="/abilities" element={<Abilities />} />
+                    <Route path="/portfolio/react" element={<ReactIndex />} />
+                    <Route path="/portfolio/python" element={<PythonIndex />} />
+                    <Route path="/portfolio/mern" element={<MernIndex />} />
+                    <Route path="/portfolio/python/simpleCalculator" element={<SimpleCalculator />} />
+                    <Route path="/portfolio/mern/artblog" element={<ArtBlog />} />
+                    <Route path="/portfolio/react/mywebsite" element={<MyWebsite />} />
+                </Routes>
+            </Router>
 
             <Footer />
         </div>

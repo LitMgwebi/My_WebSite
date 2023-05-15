@@ -3,7 +3,7 @@ import Tabs from "./Tabs";
 
 const Abilities = () => {
     return (
-        <div id="Abilities">
+        <div id="Index">
             <ProjectHeader header="Abilities" buttonNeeded="home" />
 
             <Tabs />

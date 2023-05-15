@@ -3,7 +3,7 @@ import ProjectHeader from '../Misc/ProjectHeader';
 
 const Portfolio = () => {
     return (
-        <div id="Portfolio">
+        <div id="Index">
             <ProjectHeader header="Portfolio" buttonNeeded="home"/>
             <div id="ContentContainer">
                 <SiteCard 
