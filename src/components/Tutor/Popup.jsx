@@ -42,8 +42,8 @@ function Popup(props) {
     else if (props.question === "Pricing?") {
         paragraph = (
             <div className="paragraph">
-                <PopupCard information="1hr session at Campus Key Scarborough or North Campus : R150" />
-                <PopupCard information="1hr session anywhere else in Summerstrand / Humewood : R180" />
+                <PopupCard information="1hr session at Campus Key Scarborough: R150" />
+                <PopupCard information="1hr session anywhere else in Summerstrand / Humewood : R190" />
             </div>
         );
     }

@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <footer id="Footer">
             <div>
-                <p>@2023LithiMgwebi</p>
+                <p>@2023-LithiMgwebi</p>
             </div>
             <SocialLinks/>
         </footer>
