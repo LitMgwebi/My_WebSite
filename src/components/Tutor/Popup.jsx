@@ -43,7 +43,8 @@ function Popup(props) {
         paragraph = (
             <div className="paragraph">
                 <PopupCard information="1hr session at Campus Key Scarborough: R150" />
-                <PopupCard information="1hr session anywhere else in Summerstrand / Humewood : R190" />
+                <PopupCard information="1hr session anywhere else in Summerstrand : R180" />
+                <PopupCard information="1hr session anywhere else in Humewood : R200" />
             </div>
         );
     }
