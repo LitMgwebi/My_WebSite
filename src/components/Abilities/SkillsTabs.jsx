@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Certifications from "./Certifications";
-import Skills from "./Skills";
+import Proficieny from "./Proficieny";
 
-const Tabs = () => {
+const SkillsTabs = () => {
     const [activeTab, setActiveTab] = useState("certifications");
     const handleTab1 = () => {
         setActiveTab("certifications");
@@ -23,14 +23,14 @@ const Tabs = () => {
                     className={activeTab === "skills" ? "active" : ""}
                     onClick={handleTab2}
                 >
-                    Skills
+                    Proficiency
                 </li>
             </ul>
 
             <div className="outlet">
-                {activeTab === "certifications" ? <Certifications /> : <Skills />}
+                {activeTab === "certifications" ? <Certifications /> : <Proficieny />}
             </div>
         </div>
     );
 };
-export default Tabs;
+export default SkillsTabs;

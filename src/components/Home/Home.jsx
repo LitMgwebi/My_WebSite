@@ -1,4 +1,6 @@
-import {Abilities, About, Portfolio, Tutor} from "../Misc/Links";
+import Portfolio from "../Portfolio/Portfolio";
+import Skills from "../Abilities/Skills";
+import Profile from "../About/Profile";
 
 function Home() {
     return(
@@ -16,12 +18,10 @@ function Home() {
                 {/*<div className="IntroParagraph">
                 <p>Hi, my name is Lithi Mgwebi. I am a freelance web developer</p>      
             </div>*/}
-
-                <div className="homeLinks">
-                    <Portfolio /><Abilities /><About /><Tutor />
-                </div>
             </div>
-
+            <Portfolio/>
+            <Skills/>
+            <Profile/>
         </div>
     );
 }

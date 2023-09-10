@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Education from "./Education";
-import Profile from "./Profile";
+import Biography from "./Biography";
 
-function Tabs() {
+function ProfileTabs() {
     const [activeTab, setActiveTab] = useState("profile");
     const handleTab1 = () => {
         setActiveTab("profile");
@@ -17,7 +17,7 @@ function Tabs() {
                     className={activeTab === "profile" ? "active" : ""}
                     onClick={handleTab1}
                 >
-                    Profile
+                    Biography
                 </li>
                 <li
                     className={activeTab === "education" ? "active" : ""}
@@ -28,10 +28,10 @@ function Tabs() {
             </ul>
 
             <div className="outlet">
-                {activeTab === "profile" ? <Profile /> : <Education />}
+                {activeTab === "profile" ? <Biography /> : <Education />}
             </div>
         </div>
     );
 }
 
-export default Tabs;
+export default ProfileTabs;

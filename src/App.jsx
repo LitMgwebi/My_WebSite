@@ -8,9 +8,9 @@ import PythonIndex from "./components/Portfolio/PortfolioPages/PythonPage/Python
 import SimpleCalculator from "./components/Portfolio/PortfolioPages/PythonPage/SimpleCalculator";
 import Portfolio from "./components/Portfolio/Portfolio";
 import ArtBlog from "./components/Portfolio/PortfolioPages/MernPage/ArtBlog";
-import About from "./components/About/About";
+import Profile from "./components/About/Profile";
 import Tutor from "./components/Tutor/Tutor";
-import Abilities from "./components/Abilities/Abilities";
+import Skills from "./components/Abilities/Skills";
 import MyWebsite from "./components/Portfolio/PortfolioPages/ReactPage/MyWebsite";
 //#endregion
 
@@ -40,9 +40,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/about" element={<About />} />
+                    <Route path="/profile" element={<Profile />} />
                     <Route path="/tutor" element={<Tutor />} />
-                    <Route path="/abilities" element={<Abilities />} />
+                    <Route path="/skills" element={<Skills />} />
                     <Route path="/portfolio/react" element={<ReactIndex />} />
                     <Route path="/portfolio/python" element={<PythonIndex />} />
                     <Route path="/portfolio/mern" element={<MernIndex />} />

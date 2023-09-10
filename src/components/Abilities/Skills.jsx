@@ -1,16 +1,11 @@
-import { pLanguages, BEFrameworks, development, database } from "./units/Stats";
-import Chart from "../Misc/Chart";
+import SkillsTabs from "./SkillsTabs";
 
-function Skills() {
+const Skills = () => {
     return (
-        <div id="ContentContainer">
-            <Chart title="Types of Development" stats={development} />
-            <Chart title="Programming Languages" stats={pLanguages} />
-            <Chart title="Back-end Frameworks" stats={BEFrameworks} />
-            <Chart title="Database" stats={database} />
-            {/* <Chart title="UI" stats={UI}/> */}
-        </div>
-    )
+        <div id="Skills">
+            <SkillsTabs />
+        </div> 
+    );
 }
 
-export default Skills;
+export default Skills
