@@ -11,7 +11,7 @@ const SkillsTabs = () => {
         setActiveTab("skills");
     };
     return (
-        <div id="ContentContainer">
+        <>
             <ul className="nav">
                 <li
                     className={activeTab === "certifications" ? "active" : ""}
@@ -30,7 +30,7 @@ const SkillsTabs = () => {
             <div className="outlet">
                 {activeTab === "certifications" ? <Certifications /> : <Proficieny />}
             </div>
-        </div>
+        </>
     );
 };
 export default SkillsTabs;

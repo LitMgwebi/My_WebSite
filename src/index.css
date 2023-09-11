@@ -20,19 +20,27 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-y: scroll;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     overflow: auto;
     background-color: var(--backgroundColor);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+a, h1, h2, h3, h4, h5, h6, p {
+    text-decoration: none;
+    color: var(--textColour);
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .App {
@@ -52,15 +60,6 @@ code {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: var(--textColour);
-}
-
-    a:hover {
-        text-decoration: underline;
-    }
-
 .ProjectHeader {
     color: var(--textColour);
     padding: 0.1rem;
@@ -71,15 +70,6 @@ a {
     flex-direction: row
 }
 
-#Portfolio, #Abilities, #About {
-    display: flex;
-    flex-direction: column;
-    min-height: 80vh;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    padding: 0%;
-}
 
 #ContentContainer {
     width: 95%;
@@ -98,25 +88,162 @@ a {
 }
 
 
+/* Porfolio */
+#Portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    background-color: pink;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+#Portfolio section{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 100%;
+}
+
+.portfolioNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+.portfolioNav li {
+    width: 100%;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.portfolioNav li:nth-child(2) {
+        border-radius: 0;
+        border-bottom-left-radius: 2rem;
+        border-top-left-radius: 2rem;
+    }
+
+    .portfolioNav li:hover {
+        background: var(--cardColor);
+    }
+
+    .portfolioNav li.active {
+        background: var(--divColour);
+    }
+
+.portfolioOutlet{
+    width: 80%;
+    height: 90%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: var(--divColour);
+    padding: 0.4em 1.4em;
+}
+
+
+/* Skills*/
+#Skills {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 2rem 0;
+    background-color: red;
+}
+.certifications, .proficiency {
+    width: 90%;
+    /* height: 80%; Add when changing document certificates */
+    max-height: 25rem;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    align-items: stretch;
+    background-color: var(--divColour);
+    padding: 0.4em 1.4em;
+}
+
+#Profile {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    background-color: indigo;
+    margin: 2rem 0;
+}
+.biography, .education {
+    width: 85%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    align-items: stretch;
+    background-color: var(--divColour);
+    padding: 0.4em 1.4em;
+}
+
 /* Card Config */
 .card {
     width: 14rem;
-    height: 18rem;
-    margin: 3%;
-}
-
-.cardMedia {
-    height: 65%
-}
-
-.cardContent {
-    height: 35%;
     background-color: var(--cardColor);
+    height: 20rem;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+.card:hover {
+    background-color: var(--backgroundColor);
+}
+.cardMedia{
+    width: 100%;
+    height: 55%;
+}
+.cardMedia img{
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    object-fit: cover;
+    max-width: 100%;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+}
+.cardMedia:hover img {
+    transform: scale(1.1); 
+}
+.cardMedia figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.cardContent {
+    padding: 0 0.5rem;
+    height: 45%;
+}
+.cardContent h2 {
+    transition: color 0.3s ease-out;
 }
 
-    .cardContent:hover {
-        background-color: var(--divColour);
-    }
 
 .tutorCard {
     width: 11rem;
@@ -454,14 +581,15 @@ a {
     }
 
 ul.nav {
-    width: 60%;
+    width: 70%;
     display: flex;
     margin: 0rem auto 0rem;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--divColour);
-    border-radius: 2rem;
-    padding-left: 0px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 0px;
 
     @media (max-width: 768px) {
         width: 90%;
@@ -470,27 +598,27 @@ ul.nav {
 
     ul.nav li {
         width: 50%;
-        padding: 0.3rem;
+        padding: 0.8rem;
         list-style: none;
         text-align: center;
         cursor: pointer;
         transition: all 0.7s;
-        border-bottom-left-radius: 2rem;
-        border-top-left-radius: 2rem;
+        /* border-bottom-left-radius: 2rem; */
+        border-top-left-radius: 1.5rem;
     }
 
         ul.nav li:nth-child(2) {
             border-radius: 0;
-            border-bottom-right-radius: 2rem;
-            border-top-right-radius: 2rem;
+            /* border-bottom-right-radius: 2rem; */
+            border-top-right-radius: 1.5rem;
         }
 
         ul.nav li:hover {
-            background: var(--divColour);
+            background: var(--cardColor);
         }
 
         ul.nav li.active {
-            background: var(--cardColor);
+            background: var(--divColour);
         }
 
 

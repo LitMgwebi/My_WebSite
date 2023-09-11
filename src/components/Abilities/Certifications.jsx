@@ -4,22 +4,22 @@ import googleAdsCertificate from "../../media/Certificates/Google_Ads_Certificat
 
 function Certifications() {
   return (
-    <div id="ContentContainer">
-      <div className="Certificate">
+    <div className="certifications">
+      <section>
         <h4>SQL Certificate</h4>
         <a href="https://www.sololearn.com/certificates/CT-UJ828G0U" target="_blank" rel="noopener noreferrer">
           <Document classname="doc" file={sqlCertificate}>
               <Page pageNumber={1} />
           </Document>
         </a>
-      </div>
+      </section>
       
-      <div className="Certificate">
+      <section>
         <h4>Google Ads Display Certificate</h4>
         <Document classname="doc" file={googleAdsCertificate}>
             <Page pageNumber={1} />
         </Document>
-      </div>
+      </section>
     </div>
   );
 }

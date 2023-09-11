@@ -1,10 +1,9 @@
-import ProjectHeader from "../Misc/ProjectHeader";
 import ProfileTabs from "./ProfileTabs";
 
 function Profile() {
     return (
         <div id="Profile">
-            <ProjectHeader header="About Me" buttonNeeded="home" />
+            <h1>Profile</h1>
             <ProfileTabs/>
         </div>
     );

@@ -11,7 +11,7 @@ function ProfileTabs() {
         setActiveTab("education");
     };
     return (
-        <div id="ContentContainer">
+        <>
             <ul className="nav">
                 <li
                     className={activeTab === "profile" ? "active" : ""}
@@ -30,7 +30,7 @@ function ProfileTabs() {
             <div className="outlet">
                 {activeTab === "profile" ? <Biography /> : <Education />}
             </div>
-        </div>
+        </>
     );
 }
 

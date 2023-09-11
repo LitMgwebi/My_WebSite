@@ -1,10 +1,8 @@
-import ProjectHeader from "../../../Misc/ProjectHeader";
 import SiteCard from "../../../Misc/SiteCard";
 
 function PythonIndex(){
     return(
         <div id="Index">
-            <ProjectHeader header="Python" buttonNeeded="back"/>
             <div id="ContentContainer">
                 <SiteCard 
                     routeLink="/portfolio/python/simpleCalculator" 

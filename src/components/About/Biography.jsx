@@ -1,7 +1,6 @@
 function Biography() {
     return (
-        <div id="ContentContainer">
-            <article id="About">
+            <article className="biography">
                 <p>
                     <section>
                         I have always wanted to strive for the best in my life and the lives of those around me.
@@ -24,7 +23,6 @@ function Biography() {
                     </section>
                 </p>
             </article>
-        </div>
     );
 }
 

@@ -9,7 +9,7 @@ function Education() {
         setExpanded(isExpanded ? panel : false);
     }
     return (
-        <div id="ContentContainer">
+        <div className="education">
             <div id="Accordion">
                 <Accordion className="accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary

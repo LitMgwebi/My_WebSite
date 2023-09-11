@@ -3,7 +3,7 @@ import Chart from "../Misc/Chart";
 
 function Proficieny() {
     return (
-        <div id="ContentContainer">
+        <div className="proficiency">
             <Chart title="Types of Development" stats={development} />
             <Chart title="Programming Languages" stats={pLanguages} />
             <Chart title="Back-end Frameworks" stats={BEFrameworks} />
